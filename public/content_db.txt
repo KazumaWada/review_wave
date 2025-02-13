@@ -1,0 +1,45 @@
+kazuma
+2025/01/23
+if you wanna fine-tune your large language model and run it locally on your machine, use Ollama. In todays video we gonna do exactly that.
+https://www.youtube.com/watch?v=pxhkDaKzBaY
+fine-tune: 最適化,最適なものを見つける
+kazuma
+2025/01/23
+If your WYSIWYG editor image upload feature turns out to be an involved process, that's a problem.
+the process was more involved than we expected.
+involve: 「関与する」の他に、「複雑な、手間のかかる」という意味でも使われる。
+https://www.tiny.cloud/blog/wysiwyg-image-upload/
+test_user
+2025/01/20
+hello, world! yay!
+kazuma
+2025/01/18
+I always put myself in bad positions all the time you know you put in yourself bad position but you put yourself in there anyways. oh its holidays ok ill eat a cinnamon ban, ice cream, strawberry　cake. i dont know how human mind works. why do i have to celebrate with like something toxic its horrible.
+https://www.youtube.com/watch?v=bz79rda7X9I
+kazuma
+2025/01/18
+everything he says seems compelling because he's jacked.
+kazuma
+2025/01/18
+Building something interesting requires a surplus of time and money. Salaried jobs provide neither. Unless the job itself is your dream, stay the fuck away from them.
+A surplus of time and money gives you the chance to make something creative.
+surplus of time and money:(extra, more than enough time and money)
+he has a surplus of time and money, so he spend his days traveling.
+kazuma
+2025/01/18
+Chiang Mai's food generally contains less meat. After living here for a month, I ordered KFC through Grab. As I ate it, I could feel my body being blessed by the meat. Now, I'm addicted.
+kazuma
+2025/01/18
+"My ridiculous intake of over six cups of coffee daily definitely pushed me over the edge, but it was only the catalyst, not the cause.
+https://levels.io/reset-your-life/
+pushed me over the edge: "The phrase "pushed me over the edge" typically means that something caused a person to reach their breaking point emotionally, mentally, or in terms of patience. It suggests that the person was already close to their limit, and the event or action pushed them beyond their capacity to cope or remain composed."
+自作英文:
+"coding 8h straight literally pushed me over the edge.
+
+
+2025-01-23 10:08:38 +0000: <p>kkkkk</p>
+2025-01-23 10:09:22 +0000: <p>test </p>
+2025-02-12 09:05:14 +0000: <p>hello</p>
+2025-02-12 09:08:07 +0000: <p>helloooooo</p>
+2025-02-12 09:09:33 +0000: <p>hello</p>
+2025-02-12 09:22:05 +0000: <p>heyyyy</p>

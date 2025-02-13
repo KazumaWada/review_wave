@@ -1,0 +1,147 @@
+<div class="mx-auto max-w-5xl">
+
+  <div class="text-center mt-1">
+    <h1 class="text-4xl font-medium">eigopencil.com</h1>
+    <p class="fonr-bold mt-3">英語のアウトプットを、あなたの方法で、あなたのペースで。</p>
+    <%= image_tag("welcome.png", class: "mx-auto max-w-[320px] h-auto rounded-lg") %>
+  </div>
+
+<div>
+
+<!--welcome-->
+  <div class="text-center m-2 border border-gray-50 rounded-lg shadow p-6 hover:shadow-md">
+
+    <!-- 1カラム目 -->
+      <div class="">
+        <h4 class="text-left text-xl text-gray-700 font-medium">🎉ようこそ！</h4>
+        <!--<p class="border-b border-gray-300"></p>-->
+        <p class="text-gray-500 text-left mt-4">
+        eigopencilは、あなたへ英語のアウトプットができるスペースを提供します。
+        英語日記、覚えたいフレーズや単語、短い文章からブログのような長文など、目的やスタイルを問わず自分らしい英語の表現を磨いていきましょう。
+        </p>
+      </div>
+
+   </div>
+
+<!--editor-->
+<div class="text-center m-2 border border-gray-50 rounded-lg shadow p-6 hover:shadow-md">
+
+  <div class="">
+    <h4 class="text-left text-xl text-gray-700 font-medium">🖋️手書き対応！使いやすい投稿エディタ</h4>
+    <div class="text-gray-500 text-left mt-4">
+    <p class="text-gray-500">改行,太字,見出し,引用やリンク挿入に対応</p>
+    <p class="text-gray-500">手書きの英文も読み取り可能</p>
+    <p class="text-gray-500">最大1000文字まで入力OK！</p>
+    <p class="text-gray-500">下書きに保存して後で書くこともできます。</p>
+   </div>
+    <div class="mt-2 mx-auto max-w-[340px] bg-gray-50 border border-gray-100 rounded-lg p-4 shadow-sm">
+     <%= image_tag("editor.png", class: "mx-auto max-w-[320px] h-auto rounded-lg") %>
+    </div>   
+  </div>
+
+</div>
+
+
+<!--simple-->
+<div class="text-center m-2 border border-gray-50 rounded-lg shadow p-6 hover:shadow-md">
+
+  <div class="text-center">
+    <div class="p-1 mt-3">
+    <h4 class="text-left text-xl text-gray-700 font-medium">シンプルなデザイン</h4>
+        <p class="text-gray-500 text-left">
+        皆さんが「書く」ことに集中できるように、シンプルな見た目を心がけました。
+        </p>
+      </div>
+  </div>
+</div>
+
+<!--features-->
+<div class="text-center m-2 border border-gray-50 rounded-lg shadow p-6 hover:shadow-md">
+
+  <div class="text-left">
+    <div class="p-1 mt-3">
+    <h4 class="text-left text-xl text-gray-700 font-medium">🛠️今後、追加が予定されている機能</h4>
+    <li class="text-gray-500">画像の挿入を可能にする</li>
+    <li class="text-gray-500">AIによるあなた専用の単語/フレーズ帳の作成</li>
+    <li class="text-gray-500">英語コンテンツのURL共有</li>
+      </div>
+  </div>
+</div>
+
+<!--lets use this app-->
+
+<div class="text-center m-2 border border-gray-50 rounded-lg shadow p-6 hover:shadow-md">
+
+  <div class="text-left">
+    <div class="p-1 mt-3">
+    <h4 class="text-left text-xl text-gray-700 font-medium">🔥eigopencilを使い込んで英語力を上げよう!</h4>
+    <%= image_tag("goal.png", class: "mx-auto max-w-[320px] h-auto rounded-lg") %>
+    <p class="text-gray-500 text-left mt-4">
+      継続して英語をアウトプットすることで、確実にスキルは向上します。eigopencilはそのための環境をあなたに提供します。まずは短い一文から始めてみませんか？
+    </p>
+    <p class="mt-4"><%= link_to "はじめる", signup_path, data: { turbo: false }, class: "text-gray-600 hover:bg-yellow-500 border border-gray-400 hover:border-gray-800 rounded-full px-4 py-2 transition-colors" %></p>
+      </div>
+  </div>
+</div>
+
+<!--learn more-->
+
+<div class="text-center m-2 border border-gray-50 rounded-lg shadow p-6 hover:shadow-md">
+
+  <div class="text-left">
+    <div class="p-1 mt-3">
+    <h4 class="text-left text-xl text-gray-700 font-medium">📚Learn more</h4>
+
+    <div class="mt-4 hover:bg-yellow-500 text-center">
+          <%= link_to how_i_use_path,
+                      class: "no-underline text-black block border border-gray-300 rounded-md p-4 bg-transparent transition",
+                      data: { turbo: false } do %>
+            <h6 class="text-gray-500">開発者のeigopencil使い方</h6>
+          <% end %>
+    </div>
+
+    <div class="mt-4 hover:bg-yellow-500 text-center">
+      <%= link_to evidence_path,
+                  class: "no-underline text-black block border border-gray-300 rounded-md p-4 bg-transparent transition",
+                  data: { turbo: false } do %>
+        <h6 class="text-gray-500">科学が示す「英語を書くこと」の効果</h6>
+      <% end %>
+    </div>
+    </div>
+  </div>
+</div>
+
+
+<!--contact-->
+<div class="text-center m-2 border border-gray-50 rounded-lg shadow p-6 hover:shadow-md">
+  <div class="text-left">
+    <div class="p-1 mt-3">
+    <h4 class="text-left text-xl text-gray-700 font-medium">✉️お問い合わせ</h4>
+    <p class="text-gray-500 text-left mt-4">
+    あなたのフィードバックが、eigopencilをもっと便利で使いやすいサービスにしていきます。  
+          不具合やもっとこうした方がいいなどの声はぜひこちらまでお聞かせください。<br>
+          ✉️: eigopencil@gmail.com
+    </p>
+      </div>
+  </div>
+</div>
+    
+
+
+<!--me-->
+
+<div class="text-center mt-4">
+  <p class="text-gray-400 flex items-center justify-center space-x-2">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 21v-7.5a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349M3.75 21V9.349m0 0a3.001 3.001 0 0 0 3.75-.615A2.993 2.993 0 0 0 9.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 0 0 2.25 1.016c.896 0 1.7-.393 2.25-1.015a3.001 3.001 0 0 0 3.75.614m-16.5 0a3.004 3.004 0 0 1-.621-4.72l1.189-1.19A1.5 1.5 0 0 1 5.378 3h13.243a1.5 1.5 0 0 1 1.06.44l1.19 1.189a3 3 0 0 1-.621 4.72M6.75 18h3.75a.75.75 0 0 0 .75-.75V13.5a.75.75 0 0 0-.75-.75H6.75a.75.75 0 0 0-.75.75v3.75c0 .414.336.75.75.75Z" />
+    </svg>
+    <a href="/kazuma" class="border-b border-dotted border-gray-400 text-gray-400 hover:text-gray-600">
+      kazuma
+    </a>が運営中
+  </p>
+</div>
+
+
+
+
+

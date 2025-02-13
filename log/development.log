@@ -1,0 +1,2074 @@
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE DATABASE "myapp_development" ENCODING = 'unicode'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE "myapp_test" ENCODING = 'unicode'[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 172.18.0.1 at 2025-02-12 08:47:10 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendering microposts/index.html.erb
+  [1m[36mMicropost Load (1.8ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."status" = $1 ORDER BY "microposts"."created_at" DESC[0m  [["status", 1]]
+  ↳ app/views/microposts/index.html.erb:33
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  Rendered microposts/index.html.erb (Duration: 57.8ms | Allocations: 43729)
+  Rendered home/index.html.erb within layouts/application (Duration: 60.3ms | Allocations: 44724)
+Importmap skipped missing path: controllers/example_controller.js
+  Rendered layouts/_flash_message.html.erb (Duration: 2.2ms | Allocations: 274)
+  Rendered layouts/_header_beta.html.erb (Duration: 3.2ms | Allocations: 1528)
+  Rendered layouts/_bottom_btns.html.erb (Duration: 0.6ms | Allocations: 343)
+  Rendered layout layouts/application.html.erb (Duration: 884.3ms | Allocations: 200441)
+Completed 200 OK in 928ms (Views: 884.9ms | ActiveRecord: 7.8ms | Allocations: 211066)
+
+
+Started GET "/login" for 172.18.0.1 at 2025-02-12 08:47:15 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 29.1ms | Allocations: 2572)
+  Rendered layouts/_flash_message.html.erb (Duration: 0.1ms | Allocations: 23)
+  Rendered layouts/_header_beta.html.erb (Duration: 1.6ms | Allocations: 979)
+  Rendered layouts/_bottom_btns.html.erb (Duration: 0.2ms | Allocations: 181)
+  Rendered layout layouts/application.html.erb (Duration: 45.4ms | Allocations: 6130)
+Completed 200 OK in 50ms (Views: 47.8ms | ActiveRecord: 0.0ms | Allocations: 6790)
+
+
+Started POST "/guest_login" for 172.18.0.1 at 2025-02-12 08:47:16 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#guest as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:54:in `guest'
+Redirected to http://localhost:3001/about
+Completed 302 Found in 17ms (ActiveRecord: 1.2ms | Allocations: 1552)
+
+
+Started GET "/about" for 172.18.0.1 at 2025-02-12 08:47:16 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#about as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 6.6ms | Allocations: 2459)
+  Rendered layouts/_flash_message.html.erb (Duration: 0.1ms | Allocations: 24)
+  Rendered layouts/_header_beta.html.erb (Duration: 2.1ms | Allocations: 1244)
+  Rendered layouts/_bottom_btns.html.erb (Duration: 0.1ms | Allocations: 136)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 6087)
+Completed 200 OK in 21ms (Views: 12.9ms | ActiveRecord: 0.6ms | Allocations: 7329)
+
+
+Started GET "/test_user/zen" for 172.18.0.1 at 2025-02-12 08:47:21 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MicropostsController#zen_new as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:74:in `zen_new'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/zen_new.html.erb within layouts/application
+  Rendered microposts/_flash_card_input.html.erb (Duration: 0.3ms | Allocations: 128)
+  Rendered microposts/zen_new.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2353)
+Importmap skipped missing path: controllers/example_controller.js
+  Rendered layouts/_flash_message.html.erb (Duration: 0.5ms | Allocations: 263)
+  Rendered layouts/_header_beta.html.erb (Duration: 2.2ms | Allocations: 1755)
+  Rendered layouts/_bottom_btns.html.erb (Duration: 0.4ms | Allocations: 303)
+  Rendered layout layouts/application.html.erb (Duration: 124.7ms | Allocations: 61327)
+Completed 200 OK in 172ms (Views: 126.8ms | ActiveRecord: 3.9ms | Allocations: 81142)
+
+
+Started POST "/test_user/zen_create" for 172.18.0.1 at 2025-02-12 08:55:51 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "micropost"=>{"content"=>"<p>hello</p>"}, "commit"=>"✅投稿", "slug"=>"test_user"}
+🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️Params: #<ActionController::Parameters {"authenticity_token"=>"_dZNGi99IUy_qRk5uO72fvSx1xTG_dMTyXwgvfs6bVgHDhP1tRh13NvQ99NhSdRYj-2UlOj2w-9I0Cm2BSwSYw", "micropost"=>{"content"=>"<p>hello</p>"}, "commit"=>"✅投稿", "controller"=>"microposts", "action"=>"zen_create", "slug"=>"test_user"} permitted: false>
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:84:in `zen_create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/microposts_controller.rb:95:in `zen_create'
+  [1m[36mMicropost Create (6.6ms)[0m  [1m[32mINSERT INTO "microposts" ("content", "user_id", "created_at", "updated_at", "status") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["content", "<p>hello</p>"], ["user_id", 2], ["created_at", "2025-02-12 08:55:51.679295"], ["updated_at", "2025-02-12 08:55:51.679295"], ["status", 1]]
+  ↳ app/controllers/microposts_controller.rb:95:in `zen_create'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/microposts_controller.rb:95:in `zen_create'
+Completed 500 Internal Server Error in 121ms (ActiveRecord: 14.5ms | Allocations: 17431)
+
+
+  
+NameError (uninitialized constant MicropostsController::MailgunService):
+  
+app/controllers/microposts_controller.rb:97:in `zen_create'
+[dotenv] Set [36mMAILGUN_API_KEY[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE DATABASE "myapp_development" ENCODING = 'unicode'[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE "myapp_test" ENCODING = 'unicode'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[dotenv] Set [36mMAILGUN_API_KEY[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for 172.18.0.1 at 2025-02-12 09:04:58 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendering microposts/index.html.erb
+  [1m[36mMicropost Load (0.6ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."status" = $1 ORDER BY "microposts"."created_at" DESC[0m  [["status", 1]]
+  ↳ app/views/microposts/index.html.erb:33
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  Rendered microposts/index.html.erb (Duration: 26.5ms | Allocations: 27758)
+  Rendered home/index.html.erb within layouts/application (Duration: 29.6ms | Allocations: 28543)
+Importmap skipped missing path: controllers/example_controller.js
+  Rendered layouts/_flash_message.html.erb (Duration: 0.6ms | Allocations: 274)
+  Rendered layouts/_header_beta.html.erb (Duration: 2.2ms | Allocations: 1944)
+  Rendered layouts/_bottom_btns.html.erb (Duration: 0.4ms | Allocations: 303)
+  Rendered layout layouts/application.html.erb (Duration: 275.7ms | Allocations: 91094)
+Completed 200 OK in 347ms (Views: 280.4ms | ActiveRecord: 5.0ms | Allocations: 120254)
+
+
+Started GET "/test_user/zen" for 172.18.0.1 at 2025-02-12 09:05:06 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_new as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:74:in `zen_new'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/zen_new.html.erb within layouts/application
+  Rendered microposts/_flash_card_input.html.erb (Duration: 0.4ms | Allocations: 120)
+  Rendered microposts/zen_new.html.erb within layouts/application (Duration: 13.0ms | Allocations: 1772)
+  Rendered layouts/_flash_message.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered layouts/_header_beta.html.erb (Duration: 2.3ms | Allocations: 1158)
+  Rendered layouts/_bottom_btns.html.erb (Duration: 0.8ms | Allocations: 141)
+  Rendered layout layouts/application.html.erb (Duration: 22.3ms | Allocations: 5457)
+Completed 200 OK in 63ms (Views: 28.5ms | ActiveRecord: 1.6ms | Allocations: 7425)
+
+
+Started POST "/test_user/zen_create" for 172.18.0.1 at 2025-02-12 09:05:13 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "micropost"=>{"content"=>"<p>hello</p>"}, "commit"=>"✅投稿", "slug"=>"test_user"}
+🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️Params: #<ActionController::Parameters {"authenticity_token"=>"V42c6zZ_asxP1D8JbChWSGZ4DjGva3felbwiIG8uSpatVcIErBo-XCut0eO1j3RuHSRNsYFgZyIUECsrkTg1rQ", "micropost"=>{"content"=>"<p>hello</p>"}, "commit"=>"✅投稿", "controller"=>"microposts", "action"=>"zen_create", "slug"=>"test_user"} permitted: false>
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:84:in `zen_create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/microposts_controller.rb:95:in `zen_create'
+  [1m[36mMicropost Create (3.3ms)[0m  [1m[32mINSERT INTO "microposts" ("content", "user_id", "created_at", "updated_at", "status") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["content", "<p>hello</p>"], ["user_id", 2], ["created_at", "2025-02-12 09:05:13.117718"], ["updated_at", "2025-02-12 09:05:13.117718"], ["status", 1]]
+  ↳ app/controllers/microposts_controller.rb:95:in `zen_create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/microposts_controller.rb:95:in `zen_create'
+Redirected to http://localhost:3001/test_user
+Completed 302 Found in 1273ms (ActiveRecord: 5.4ms | Allocations: 8971)
+
+
+Started GET "/test_user" for 172.18.0.1 at 2025-02-12 09:05:14 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:45:in `show'
+  [1m[36mMicropost Count (1.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2[0m  [["user_id", 2], ["status", 1]]
+  ↳ app/controllers/users_controller.rb:47:in `show'
+  [1m[36mMicropost Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2[0m  [["user_id", 2], ["status", 0]]
+  ↳ app/controllers/users_controller.rb:48:in `show'
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2 ORDER BY "microposts"."created_at" DESC[0m  [["user_id", 2], ["status", 1]]
+  ↳ app/controllers/users_controller.rb:49:in `show'
+  [1m[36mCACHE Micropost Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2[0m  [["user_id", 2], ["status", 0]]
+  ↳ app/controllers/users_controller.rb:50:in `show'
+  [1m[36mMicropost Pluck (0.3ms)[0m  [1m[34mSELECT "microposts"."created_at" FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2 ORDER BY "microposts"."created_at" DESC[0m  [["user_id", 2], ["status", 1]]
+  ↳ app/controllers/users_controller.rb:64:in `show'
+👷👷👷👷👷@posted_dates: [12, 12, 19]
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mMicropost Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "microposts" WHERE "microposts"."user_id" = $1 LIMIT $2[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:35
+  [1m[36mCACHE Micropost Load (0.0ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2 ORDER BY "microposts"."created_at" DESC[0m  [["user_id", 2], ["status", 1]]
+  ↳ app/views/microposts/_micropost.html.erb:24
+  Rendered microposts/_micropost.html.erb (Duration: 5.9ms | Allocations: 2777)
+  Rendered users/show.html.erb within layouts/application (Duration: 11.1ms | Allocations: 4778)
+  Rendered layouts/_flash_message.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered layouts/_header_beta.html.erb (Duration: 1.5ms | Allocations: 1155)
+  Rendered layouts/_bottom_btns.html.erb (Duration: 0.2ms | Allocations: 141)
+  Rendered layout layouts/application.html.erb (Duration: 18.8ms | Allocations: 8466)
+Completed 200 OK in 39ms (Views: 20.8ms | ActiveRecord: 3.2ms | Allocations: 13428)
+
+
+Started GET "/test_user" for 172.18.0.1 at 2025-02-12 09:07:37 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#show as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:45:in `show'
+  [1m[36mMicropost Count (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2[0m  [["user_id", 2], ["status", 1]]
+  ↳ app/controllers/users_controller.rb:47:in `show'
+  [1m[36mMicropost Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2[0m  [["user_id", 2], ["status", 0]]
+  ↳ app/controllers/users_controller.rb:48:in `show'
+  [1m[36mMicropost Load (0.1ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2 ORDER BY "microposts"."created_at" DESC[0m  [["user_id", 2], ["status", 1]]
+  ↳ app/controllers/users_controller.rb:49:in `show'
+  [1m[36mCACHE Micropost Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2[0m  [["user_id", 2], ["status", 0]]
+  ↳ app/controllers/users_controller.rb:50:in `show'
+  [1m[36mMicropost Pluck (0.1ms)[0m  [1m[34mSELECT "microposts"."created_at" FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2 ORDER BY "microposts"."created_at" DESC[0m  [["user_id", 2], ["status", 1]]
+  ↳ app/controllers/users_controller.rb:64:in `show'
+👷👷👷👷👷@posted_dates: [12, 12, 19]
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mMicropost Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "microposts" WHERE "microposts"."user_id" = $1 LIMIT $2[0m  [["user_id", 2], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:35
+  [1m[36mCACHE Micropost Load (0.0ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2 ORDER BY "microposts"."created_at" DESC[0m  [["user_id", 2], ["status", 1]]
+  ↳ app/views/microposts/_micropost.html.erb:24
+  Rendered microposts/_micropost.html.erb (Duration: 6.0ms | Allocations: 3215)
+  Rendered users/show.html.erb within layouts/application (Duration: 11.2ms | Allocations: 5735)
+Importmap skipped missing path: controllers/example_controller.js
+  Rendered layouts/_flash_message.html.erb (Duration: 0.5ms | Allocations: 263)
+  Rendered layouts/_header_beta.html.erb (Duration: 1.9ms | Allocations: 1801)
+  Rendered layouts/_bottom_btns.html.erb (Duration: 0.5ms | Allocations: 303)
+  Rendered layout layouts/application.html.erb (Duration: 164.4ms | Allocations: 64813)
+Completed 200 OK in 214ms (Views: 167.3ms | ActiveRecord: 5.4ms | Allocations: 89988)
+
+
+Started DELETE "/logout" for 172.18.0.1 at 2025-02-12 09:07:40 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+Destroy action called
+Redirected to http://localhost:3001/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 541)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 09:07:40 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendering microposts/index.html.erb
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."status" = $1 ORDER BY "microposts"."created_at" DESC[0m  [["status", 1]]
+  ↳ app/views/microposts/index.html.erb:33
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  Rendered microposts/index.html.erb (Duration: 43.5ms | Allocations: 34111)
+  Rendered home/index.html.erb within layouts/application (Duration: 44.0ms | Allocations: 34295)
+Importmap skipped missing path: controllers/example_controller.js
+  Rendered layouts/_flash_message.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered layouts/_header_beta.html.erb (Duration: 1.3ms | Allocations: 878)
+  Rendered layouts/_bottom_btns.html.erb (Duration: 0.1ms | Allocations: 136)
+  Rendered layout layouts/application.html.erb (Duration: 62.1ms | Allocations: 49272)
+Completed 200 OK in 71ms (Views: 59.1ms | ActiveRecord: 6.7ms | Allocations: 51643)
+
+
+Started GET "/login" for 172.18.0.1 at 2025-02-12 09:07:42 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 12.7ms | Allocations: 2211)
+  Rendered layouts/_flash_message.html.erb (Duration: 0.0ms | Allocations: 23)
+  Rendered layouts/_header_beta.html.erb (Duration: 1.3ms | Allocations: 887)
+  Rendered layouts/_bottom_btns.html.erb (Duration: 0.2ms | Allocations: 136)
+  Rendered layout layouts/application.html.erb (Duration: 19.8ms | Allocations: 5630)
+Completed 200 OK in 24ms (Views: 21.6ms | ActiveRecord: 0.0ms | Allocations: 6257)
+
+
+Started POST "/login" for 172.18.0.1 at 2025-02-12 09:07:55 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"name"=>"kazuma", "password"=>"[FILTERED]"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+Redirected to http://localhost:3001/about
+Completed 302 Found in 225ms (ActiveRecord: 0.7ms | Allocations: 1614)
+
+
+Started GET "/about" for 172.18.0.1 at 2025-02-12 09:07:55 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#about as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 6.3ms | Allocations: 2584)
+  Rendered layouts/_flash_message.html.erb (Duration: 0.1ms | Allocations: 28)
+  Rendered layouts/_header_beta.html.erb (Duration: 1.3ms | Allocations: 1132)
+  Rendered layouts/_bottom_btns.html.erb (Duration: 0.3ms | Allocations: 139)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 6168)
+Completed 200 OK in 15ms (Views: 13.2ms | ActiveRecord: 0.2ms | Allocations: 7560)
+
+
+Started GET "/kazuma/zen" for 172.18.0.1 at 2025-02-12 09:07:59 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_new as HTML
+  Parameters: {"slug"=>"kazuma"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:74:in `zen_new'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/zen_new.html.erb within layouts/application
+  Rendered microposts/_flash_card_input.html.erb (Duration: 0.4ms | Allocations: 120)
+  Rendered microposts/zen_new.html.erb within layouts/application (Duration: 8.1ms | Allocations: 1585)
+  Rendered layouts/_flash_message.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered layouts/_header_beta.html.erb (Duration: 1.8ms | Allocations: 1165)
+  Rendered layouts/_bottom_btns.html.erb (Duration: 0.1ms | Allocations: 141)
+  Rendered layout layouts/application.html.erb (Duration: 16.0ms | Allocations: 5304)
+Completed 200 OK in 58ms (Views: 17.1ms | ActiveRecord: 0.4ms | Allocations: 7291)
+
+
+Started POST "/kazuma/zen_create" for 172.18.0.1 at 2025-02-12 09:08:06 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "micropost"=>{"content"=>"<p>helloooooo</p>"}, "commit"=>"✅投稿", "slug"=>"kazuma"}
+🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️Params: #<ActionController::Parameters {"authenticity_token"=>"qv592AfUo2pV2nRxf_SpKRmKv5uTWchdk4TppAbQ0KBEMyJMNGk2vi0p5DpyVk8VFCOBRXBnGAA6Tv95FXatmA", "micropost"=>{"content"=>"<p>helloooooo</p>"}, "commit"=>"✅投稿", "controller"=>"microposts", "action"=>"zen_create", "slug"=>"kazuma"} permitted: false>
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:84:in `zen_create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/microposts_controller.rb:95:in `zen_create'
+  [1m[36mMicropost Create (2.5ms)[0m  [1m[32mINSERT INTO "microposts" ("content", "user_id", "created_at", "updated_at", "status") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["content", "<p>helloooooo</p>"], ["user_id", 1], ["created_at", "2025-02-12 09:08:06.401852"], ["updated_at", "2025-02-12 09:08:06.401852"], ["status", 1]]
+  ↳ app/controllers/microposts_controller.rb:95:in `zen_create'
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/microposts_controller.rb:95:in `zen_create'
+Redirected to http://localhost:3001/kazuma
+Completed 302 Found in 688ms (ActiveRecord: 5.5ms | Allocations: 7397)
+
+
+Started GET "/kazuma" for 172.18.0.1 at 2025-02-12 09:08:07 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as HTML
+  Parameters: {"slug"=>"kazuma"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:45:in `show'
+  [1m[36mMicropost Count (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2[0m  [["user_id", 1], ["status", 1]]
+  ↳ app/controllers/users_controller.rb:47:in `show'
+  [1m[36mMicropost Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2[0m  [["user_id", 1], ["status", 0]]
+  ↳ app/controllers/users_controller.rb:48:in `show'
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2 ORDER BY "microposts"."created_at" DESC[0m  [["user_id", 1], ["status", 1]]
+  ↳ app/controllers/users_controller.rb:49:in `show'
+  [1m[36mCACHE Micropost Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2[0m  [["user_id", 1], ["status", 0]]
+  ↳ app/controllers/users_controller.rb:50:in `show'
+  [1m[36mMicropost Pluck (0.2ms)[0m  [1m[34mSELECT "microposts"."created_at" FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2 ORDER BY "microposts"."created_at" DESC[0m  [["user_id", 1], ["status", 1]]
+  ↳ app/controllers/users_controller.rb:64:in `show'
+👷👷👷👷👷@posted_dates: [12, 23, 23, 23, 23, 23, 23, 21, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 17]
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mMicropost Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "microposts" WHERE "microposts"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:35
+  [1m[36mCACHE Micropost Load (0.0ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2 ORDER BY "microposts"."created_at" DESC[0m  [["user_id", 1], ["status", 1]]
+  ↳ app/views/microposts/_micropost.html.erb:24
+  Rendered microposts/_micropost.html.erb (Duration: 17.7ms | Allocations: 16197)
+  Rendered users/show.html.erb within layouts/application (Duration: 21.3ms | Allocations: 17659)
+  Rendered layouts/_flash_message.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered layouts/_header_beta.html.erb (Duration: 1.7ms | Allocations: 1128)
+  Rendered layouts/_bottom_btns.html.erb (Duration: 0.1ms | Allocations: 134)
+  Rendered layout layouts/application.html.erb (Duration: 36.5ms | Allocations: 21250)
+Completed 200 OK in 50ms (Views: 37.5ms | ActiveRecord: 1.8ms | Allocations: 26159)
+
+
+Started GET "/kazuma/zen" for 172.18.0.1 at 2025-02-12 09:09:26 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_new as HTML
+  Parameters: {"slug"=>"kazuma"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:74:in `zen_new'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/zen_new.html.erb within layouts/application
+  Rendered microposts/_flash_card_input.html.erb (Duration: 0.0ms | Allocations: 11)
+  Rendered microposts/zen_new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 840)
+Importmap skipped missing path: controllers/example_controller.js
+  Rendered layouts/_flash_message.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered layouts/_header_beta.html.erb (Duration: 1.6ms | Allocations: 1192)
+  Rendered layouts/_bottom_btns.html.erb (Duration: 0.1ms | Allocations: 141)
+  Rendered layout layouts/application.html.erb (Duration: 71.0ms | Allocations: 16136)
+Completed 200 OK in 91ms (Views: 72.0ms | ActiveRecord: 5.8ms | Allocations: 25230)
+
+
+Started POST "/kazuma/zen_create" for 172.18.0.1 at 2025-02-12 09:09:32 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "micropost"=>{"content"=>"<p>hello</p>"}, "commit"=>"✅投稿", "slug"=>"kazuma"}
+🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️Params: #<ActionController::Parameters {"authenticity_token"=>"fi2rs-vYgXxvJWUd1ihVY2o1vOD9Dg7rAskW2xQpz-WQ4PQn2GUUqBfW9VbbirNfZ5yCPh4w3rarAwAGB4-y3Q", "micropost"=>{"content"=>"<p>hello</p>"}, "commit"=>"✅投稿", "controller"=>"microposts", "action"=>"zen_create", "slug"=>"kazuma"} permitted: false>
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:84:in `zen_create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/microposts_controller.rb:95:in `zen_create'
+  [1m[36mMicropost Create (1.5ms)[0m  [1m[32mINSERT INTO "microposts" ("content", "user_id", "created_at", "updated_at", "status") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["content", "<p>hello</p>"], ["user_id", 1], ["created_at", "2025-02-12 09:09:32.631787"], ["updated_at", "2025-02-12 09:09:32.631787"], ["status", 1]]
+  ↳ app/controllers/microposts_controller.rb:95:in `zen_create'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/microposts_controller.rb:95:in `zen_create'
+Redirected to http://localhost:3001/kazuma
+Completed 302 Found in 625ms (ActiveRecord: 2.8ms | Allocations: 6117)
+
+
+Started GET "/kazuma" for 172.18.0.1 at 2025-02-12 09:09:33 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as HTML
+  Parameters: {"slug"=>"kazuma"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:45:in `show'
+  [1m[36mMicropost Count (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2[0m  [["user_id", 1], ["status", 1]]
+  ↳ app/controllers/users_controller.rb:47:in `show'
+  [1m[36mMicropost Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2[0m  [["user_id", 1], ["status", 0]]
+  ↳ app/controllers/users_controller.rb:48:in `show'
+  [1m[36mMicropost Load (0.4ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2 ORDER BY "microposts"."created_at" DESC[0m  [["user_id", 1], ["status", 1]]
+  ↳ app/controllers/users_controller.rb:49:in `show'
+  [1m[36mCACHE Micropost Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2[0m  [["user_id", 1], ["status", 0]]
+  ↳ app/controllers/users_controller.rb:50:in `show'
+  [1m[36mMicropost Pluck (0.2ms)[0m  [1m[34mSELECT "microposts"."created_at" FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2 ORDER BY "microposts"."created_at" DESC[0m  [["user_id", 1], ["status", 1]]
+  ↳ app/controllers/users_controller.rb:64:in `show'
+👷👷👷👷👷@posted_dates: [12, 12, 23, 23, 23, 23, 23, 23, 21, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 17]
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mMicropost Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "microposts" WHERE "microposts"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:35
+  [1m[36mCACHE Micropost Load (0.0ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2 ORDER BY "microposts"."created_at" DESC[0m  [["user_id", 1], ["status", 1]]
+  ↳ app/views/microposts/_micropost.html.erb:24
+  Rendered microposts/_micropost.html.erb (Duration: 16.0ms | Allocations: 16619)
+  Rendered users/show.html.erb within layouts/application (Duration: 18.6ms | Allocations: 18191)
+  Rendered layouts/_flash_message.html.erb (Duration: 0.0ms | Allocations: 24)
+  Rendered layouts/_header_beta.html.erb (Duration: 1.1ms | Allocations: 1162)
+  Rendered layouts/_bottom_btns.html.erb (Duration: 0.1ms | Allocations: 141)
+  Rendered layout layouts/application.html.erb (Duration: 24.7ms | Allocations: 21912)
+Completed 200 OK in 86ms (Views: 25.4ms | ActiveRecord: 1.8ms | Allocations: 27271)
+
+
+Started GET "/kazuma/zen" for 172.18.0.1 at 2025-02-12 09:21:58 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_new as HTML
+  Parameters: {"slug"=>"kazuma"}
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:74:in `zen_new'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/zen_new.html.erb within layouts/application
+  Rendered microposts/_flash_card_input.html.erb (Duration: 0.0ms | Allocations: 11)
+  Rendered microposts/zen_new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 840)
+Importmap skipped missing path: controllers/example_controller.js
+  Rendered layouts/_flash_message.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered layouts/_header_beta.html.erb (Duration: 3.2ms | Allocations: 1192)
+  Rendered layouts/_bottom_btns.html.erb (Duration: 0.2ms | Allocations: 141)
+  Rendered layout layouts/application.html.erb (Duration: 25.1ms | Allocations: 16138)
+Completed 200 OK in 98ms (Views: 26.1ms | ActiveRecord: 7.4ms | Allocations: 27629)
+
+
+Started POST "/kazuma/zen_create" for 172.18.0.1 at 2025-02-12 09:22:04 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "micropost"=>{"content"=>"<p>heyyyy</p>"}, "commit"=>"✅投稿", "slug"=>"kazuma"}
+🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️Params: #<ActionController::Parameters {"authenticity_token"=>"17EOh36tgDcKZKD1cpEr02sOnCZtFpQCMGfqhgp5x9U5fFETTRAV43KXML5_M83vZqei-I4oRF-ZrfxbGd-67Q", "micropost"=>{"content"=>"<p>heyyyy</p>"}, "commit"=>"✅投稿", "controller"=>"microposts", "action"=>"zen_create", "slug"=>"kazuma"} permitted: false>
+  [1m[36mUser Load (6.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:84:in `zen_create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/microposts_controller.rb:95:in `zen_create'
+  [1m[36mMicropost Create (3.0ms)[0m  [1m[32mINSERT INTO "microposts" ("content", "user_id", "created_at", "updated_at", "status") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["content", "<p>heyyyy</p>"], ["user_id", 1], ["created_at", "2025-02-12 09:22:04.371160"], ["updated_at", "2025-02-12 09:22:04.371160"], ["status", 1]]
+  ↳ app/controllers/microposts_controller.rb:95:in `zen_create'
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/microposts_controller.rb:95:in `zen_create'
+Redirected to http://localhost:3001/kazuma
+Completed 302 Found in 852ms (ActiveRecord: 11.5ms | Allocations: 6149)
+
+
+Started GET "/kazuma" for 172.18.0.1 at 2025-02-12 09:22:05 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as HTML
+  Parameters: {"slug"=>"kazuma"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:45:in `show'
+  [1m[36mMicropost Count (1.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2[0m  [["user_id", 1], ["status", 1]]
+  ↳ app/controllers/users_controller.rb:47:in `show'
+  [1m[36mMicropost Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2[0m  [["user_id", 1], ["status", 0]]
+  ↳ app/controllers/users_controller.rb:48:in `show'
+  [1m[36mMicropost Load (0.4ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2 ORDER BY "microposts"."created_at" DESC[0m  [["user_id", 1], ["status", 1]]
+  ↳ app/controllers/users_controller.rb:49:in `show'
+  [1m[36mCACHE Micropost Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2[0m  [["user_id", 1], ["status", 0]]
+  ↳ app/controllers/users_controller.rb:50:in `show'
+  [1m[36mMicropost Pluck (0.2ms)[0m  [1m[34mSELECT "microposts"."created_at" FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2 ORDER BY "microposts"."created_at" DESC[0m  [["user_id", 1], ["status", 1]]
+  ↳ app/controllers/users_controller.rb:64:in `show'
+👷👷👷👷👷@posted_dates: [12, 12, 12, 23, 23, 23, 23, 23, 23, 21, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 17]
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mMicropost Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "microposts" WHERE "microposts"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:35
+  [1m[36mCACHE Micropost Load (0.0ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2 ORDER BY "microposts"."created_at" DESC[0m  [["user_id", 1], ["status", 1]]
+  ↳ app/views/microposts/_micropost.html.erb:24
+  Rendered microposts/_micropost.html.erb (Duration: 47.0ms | Allocations: 17141)
+  Rendered users/show.html.erb within layouts/application (Duration: 50.5ms | Allocations: 18695)
+  Rendered layouts/_flash_message.html.erb (Duration: 0.1ms | Allocations: 24)
+  Rendered layouts/_header_beta.html.erb (Duration: 2.0ms | Allocations: 1162)
+  Rendered layouts/_bottom_btns.html.erb (Duration: 0.1ms | Allocations: 141)
+  Rendered layout layouts/application.html.erb (Duration: 57.5ms | Allocations: 22416)
+Completed 200 OK in 75ms (Views: 59.2ms | ActiveRecord: 2.5ms | Allocations: 27835)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 09:36:43 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendering microposts/index.html.erb
+  [1m[36mMicropost Load (0.4ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."status" = $1 ORDER BY "microposts"."created_at" DESC[0m  [["status", 1]]
+  ↳ app/views/microposts/index.html.erb:33
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  Rendered microposts/index.html.erb (Duration: 42.1ms | Allocations: 30569)
+  Rendered home/index.html.erb within layouts/application (Duration: 42.9ms | Allocations: 30685)
+Importmap skipped missing path: controllers/example_controller.js
+  Rendered layouts/_flash_message.html.erb (Duration: 0.1ms | Allocations: 23)
+  Rendered layouts/_header_beta.html.erb (Duration: 4.1ms | Allocations: 1239)
+  Rendered layouts/_bottom_btns.html.erb (Duration: 0.3ms | Allocations: 141)
+  Rendered layout layouts/application.html.erb (Duration: 67.2ms | Allocations: 46057)
+Completed 200 OK in 147ms (Views: 68.2ms | ActiveRecord: 14.6ms | Allocations: 58423)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 09:51:21 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendering microposts/index.html.erb
+  [1m[36mMicropost Load (0.6ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."status" = $1 ORDER BY "microposts"."created_at" DESC[0m  [["status", 1]]
+  ↳ app/views/microposts/index.html.erb:33
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  Rendered microposts/index.html.erb (Duration: 82.9ms | Allocations: 30406)
+  Rendered home/index.html.erb within layouts/application (Duration: 83.8ms | Allocations: 30509)
+  Rendered layouts/_flash_message.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered layouts/_header_beta.html.erb (Duration: 2.6ms | Allocations: 1135)
+  Rendered layouts/_bottom_btns.html.erb (Duration: 0.1ms | Allocations: 134)
+  Rendered layout layouts/application.html.erb (Duration: 101.8ms | Allocations: 34213)
+Completed 200 OK in 191ms (Views: 101.9ms | ActiveRecord: 18.3ms | Allocations: 38574)
+
+
+Started GET "/lp" for 172.18.0.1 at 2025-02-12 09:53:18 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as HTML
+  Parameters: {"slug"=>"lp"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "lp"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:45:in `show'
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 1.7ms | Allocations: 1027)
+
+
+  
+NoMethodError (undefined method `microposts' for nil:NilClass):
+  
+app/controllers/users_controller.rb:46:in `show'
+Started GET "/ja" for 172.18.0.1 at 2025-02-12 09:53:31 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as HTML
+  Parameters: {"slug"=>"ja"}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "ja"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:45:in `show'
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 2.5ms | Allocations: 973)
+
+
+  
+NoMethodError (undefined method `microposts' for nil:NilClass):
+  
+app/controllers/users_controller.rb:46:in `show'
+Started GET "/lp" for 172.18.0.1 at 2025-02-12 09:53:44 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as HTML
+  Parameters: {"slug"=>"lp"}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "lp"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:45:in `show'
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 2.2ms | Allocations: 959)
+
+
+  
+NoMethodError (undefined method `microposts' for nil:NilClass):
+  
+app/controllers/users_controller.rb:46:in `show'
+Started GET "/lp" for 172.18.0.1 at 2025-02-12 09:53:46 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as HTML
+  Parameters: {"slug"=>"lp"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "lp"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:45:in `show'
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.4ms | Allocations: 959)
+
+
+  
+NoMethodError (undefined method `microposts' for nil:NilClass):
+  
+app/controllers/users_controller.rb:46:in `show'
+[dotenv] Set [36mMAILGUN_API_KEY[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE DATABASE "myapp_development" ENCODING = 'unicode'[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE "myapp_test" ENCODING = 'unicode'[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[dotenv] Set [36mMAILGUN_API_KEY[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/lp" for 172.18.0.1 at 2025-02-12 09:57:49 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#show as HTML
+  Parameters: {"slug"=>"lp"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "lp"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:45:in `show'
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 2.8ms | Allocations: 9655)
+
+
+  
+NoMethodError (undefined method `microposts' for nil:NilClass):
+  
+app/controllers/users_controller.rb:46:in `show'
+Started GET "/" for 172.18.0.1 at 2025-02-12 09:57:56 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendering microposts/index.html.erb
+  [1m[36mMicropost Load (2.2ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."status" = $1 ORDER BY "microposts"."created_at" DESC[0m  [["status", 1]]
+  ↳ app/views/microposts/index.html.erb:33
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/microposts/index.html.erb:37
+  Rendered microposts/index.html.erb (Duration: 31.9ms | Allocations: 31404)
+  Rendered home/index.html.erb within layouts/application (Duration: 64.7ms | Allocations: 32047)
+Importmap skipped missing path: controllers/example_controller.js
+  Rendered layouts/_flash_message.html.erb (Duration: 0.5ms | Allocations: 274)
+  Rendered layouts/_header_beta.html.erb (Duration: 2.1ms | Allocations: 1944)
+  Rendered layouts/_bottom_btns.html.erb (Duration: 0.4ms | Allocations: 303)
+  Rendered layout layouts/application.html.erb (Duration: 359.1ms | Allocations: 94816)
+Completed 200 OK in 465ms (Views: 358.9ms | ActiveRecord: 7.6ms | Allocations: 120938)
+
+
+Started GET "/lp" for 172.18.0.1 at 2025-02-12 09:58:57 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as HTML
+  Parameters: {"slug"=>"lp"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "lp"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:45:in `show'
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 1.3ms | Allocations: 1044)
+
+
+  
+NoMethodError (undefined method `microposts' for nil:NilClass):
+  
+app/controllers/users_controller.rb:46:in `show'
+Started GET "/" for 172.18.0.1 at 2025-02-12 10:01:44 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 107)
+Importmap skipped missing path: controllers/example_controller.js
+  Rendered layouts/_flash_message.html.erb (Duration: 0.7ms | Allocations: 233)
+  Rendered layouts/_header_beta.html.erb (Duration: 4.8ms | Allocations: 1728)
+  Rendered layouts/_bottom_btns.html.erb (Duration: 0.7ms | Allocations: 296)
+  Rendered layout layouts/application.html.erb (Duration: 32.7ms | Allocations: 16909)
+Completed 200 OK in 67ms (Views: 34.1ms | ActiveRecord: 9.3ms | Allocations: 27267)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 10:02:25 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 2527)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 2616)
+Completed 500 Internal Server Error in 49ms (ActiveRecord: 11.2ms | Allocations: 19032)
+
+
+  
+ActionView::Template::Error (The asset "lp-temp01" is not present in the asset pipeline.
+):
+    62:   </div>
+    63: 
+    64:  <div class="text-center m-6">
+    65:  <%= image_tag("lp-temp01", class: "mx-auto max-w-[320px] h-auto rounded-lg") %>
+    66: 
+    67:  </div>
+    68: 
+  
+app/views/home/index.html.erb:65
+Started GET "/" for 172.18.0.1 at 2025-02-12 10:03:46 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 220.7ms | Allocations: 44175)
+Importmap skipped missing path: controllers/example_controller.js
+  Rendered layouts/_flash_message.html.erb (Duration: 0.4ms | Allocations: 264)
+  Rendered layouts/_header_beta.html.erb (Duration: 9.6ms | Allocations: 1933)
+  Rendered layouts/_bottom_btns.html.erb (Duration: 0.7ms | Allocations: 303)
+  Rendered layout layouts/application.html.erb (Duration: 248.8ms | Allocations: 61388)
+Completed 200 OK in 274ms (Views: 254.0ms | ActiveRecord: 2.2ms | Allocations: 63423)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 10:05:45 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 7.4ms | Allocations: 1581)
+  Rendered layouts/_flash_message.html.erb (Duration: 0.5ms | Allocations: 232)
+  Rendered layouts/_header_beta.html.erb (Duration: 4.3ms | Allocations: 1661)
+  Rendered layouts/_bottom_btns.html.erb (Duration: 0.7ms | Allocations: 296)
+  Rendered layout layouts/application.html.erb (Duration: 20.6ms | Allocations: 6615)
+Completed 200 OK in 46ms (Views: 24.0ms | ActiveRecord: 1.7ms | Allocations: 8609)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 10:06:09 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 15.3ms | Allocations: 1602)
+  Rendered layouts/_flash_message.html.erb (Duration: 0.5ms | Allocations: 232)
+  Rendered layouts/_header_beta.html.erb (Duration: 3.5ms | Allocations: 1661)
+  Rendered layouts/_bottom_btns.html.erb (Duration: 0.5ms | Allocations: 296)
+  Rendered layout layouts/application.html.erb (Duration: 31.7ms | Allocations: 6635)
+Completed 200 OK in 68ms (Views: 34.4ms | ActiveRecord: 2.3ms | Allocations: 8598)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 10:06:28 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 1576)
+  Rendered layouts/_flash_message.html.erb (Duration: 0.5ms | Allocations: 232)
+  Rendered layouts/_header_beta.html.erb (Duration: 3.0ms | Allocations: 1661)
+  Rendered layouts/_bottom_btns.html.erb (Duration: 2.7ms | Allocations: 296)
+  Rendered layout layouts/application.html.erb (Duration: 21.4ms | Allocations: 6610)
+Completed 200 OK in 52ms (Views: 25.4ms | ActiveRecord: 2.5ms | Allocations: 8597)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 10:07:08 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 1576)
+  Rendered layouts/_flash_message.html.erb (Duration: 0.5ms | Allocations: 235)
+  Rendered layouts/_header_beta.html.erb (Duration: 5.2ms | Allocations: 1668)
+  Rendered layouts/_bottom_btns.html.erb (Duration: 0.5ms | Allocations: 296)
+  Rendered layout layouts/application.html.erb (Duration: 83.1ms | Allocations: 6621)
+Completed 200 OK in 111ms (Views: 86.0ms | ActiveRecord: 1.6ms | Allocations: 8607)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 10:07:44 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (5.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 14.9ms | Allocations: 1579)
+  Rendered layouts/_flash_message.html.erb (Duration: 0.6ms | Allocations: 233)
+  Rendered layouts/_header_beta.html.erb (Duration: 3.9ms | Allocations: 1661)
+  Rendered layouts/_bottom_btns.html.erb (Duration: 0.7ms | Allocations: 296)
+  Rendered layout layouts/application.html.erb (Duration: 34.6ms | Allocations: 6629)
+Completed 200 OK in 82ms (Views: 37.7ms | ActiveRecord: 5.8ms | Allocations: 8604)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 10:07:58 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 13.7ms | Allocations: 1576)
+  Rendered layouts/_flash_message.html.erb (Duration: 0.7ms | Allocations: 232)
+  Rendered layouts/_header_beta.html.erb (Duration: 9.3ms | Allocations: 1661)
+  Rendered layouts/_bottom_btns.html.erb (Duration: 0.7ms | Allocations: 296)
+  Rendered layout layouts/application.html.erb (Duration: 39.8ms | Allocations: 6610)
+Completed 200 OK in 64ms (Views: 43.7ms | ActiveRecord: 1.8ms | Allocations: 8577)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 10:08:14 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 1579)
+  Rendered layouts/_flash_message.html.erb (Duration: 0.6ms | Allocations: 232)
+  Rendered layouts/_header_beta.html.erb (Duration: 14.3ms | Allocations: 1667)
+  Rendered layouts/_bottom_btns.html.erb (Duration: 1.6ms | Allocations: 296)
+  Rendered layout layouts/application.html.erb (Duration: 30.9ms | Allocations: 6618)
+Completed 200 OK in 49ms (Views: 34.1ms | ActiveRecord: 1.2ms | Allocations: 8592)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 10:08:37 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 14.7ms | Allocations: 1576)
+  Rendered layouts/_flash_message.html.erb (Duration: 0.7ms | Allocations: 232)
+  Rendered layouts/_header_beta.html.erb (Duration: 3.5ms | Allocations: 1661)
+  Rendered layouts/_bottom_btns.html.erb (Duration: 0.6ms | Allocations: 296)
+  Rendered layout layouts/application.html.erb (Duration: 39.7ms | Allocations: 6609)
+Completed 200 OK in 72ms (Views: 43.6ms | ActiveRecord: 2.0ms | Allocations: 8584)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 10:08:44 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 10.2ms | Allocations: 1576)
+  Rendered layouts/_flash_message.html.erb (Duration: 1.0ms | Allocations: 232)
+  Rendered layouts/_header_beta.html.erb (Duration: 2.7ms | Allocations: 1661)
+  Rendered layouts/_bottom_btns.html.erb (Duration: 0.4ms | Allocations: 296)
+  Rendered layout layouts/application.html.erb (Duration: 37.6ms | Allocations: 6609)
+Completed 200 OK in 63ms (Views: 40.4ms | ActiveRecord: 1.3ms | Allocations: 8572)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 10:09:03 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 12.1ms | Allocations: 1576)
+  Rendered layouts/_flash_message.html.erb (Duration: 1.0ms | Allocations: 232)
+  Rendered layouts/_header_beta.html.erb (Duration: 4.8ms | Allocations: 1661)
+  Rendered layouts/_bottom_btns.html.erb (Duration: 0.5ms | Allocations: 296)
+  Rendered layout layouts/application.html.erb (Duration: 35.9ms | Allocations: 6609)
+Completed 200 OK in 72ms (Views: 51.2ms | ActiveRecord: 1.7ms | Allocations: 8587)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 10:09:27 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1576)
+  Rendered layouts/_flash_message.html.erb (Duration: 0.5ms | Allocations: 232)
+  Rendered layouts/_header_beta.html.erb (Duration: 10.4ms | Allocations: 1661)
+  Rendered layouts/_bottom_btns.html.erb (Duration: 1.8ms | Allocations: 296)
+  Rendered layout layouts/application.html.erb (Duration: 52.5ms | Allocations: 6609)
+Completed 200 OK in 86ms (Views: 55.8ms | ActiveRecord: 1.7ms | Allocations: 8581)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 10:10:28 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1144)
+Importmap skipped missing path: controllers/example_controller.js
+  Rendered layouts/_flash_message.html.erb (Duration: 0.1ms | Allocations: 23)
+  Rendered layouts/_header_beta.html.erb (Duration: 1.6ms | Allocations: 1231)
+  Rendered layouts/_bottom_btns.html.erb (Duration: 0.2ms | Allocations: 141)
+  Rendered layout layouts/application.html.erb (Duration: 22.6ms | Allocations: 16284)
+Completed 200 OK in 55ms (Views: 23.8ms | ActiveRecord: 8.4ms | Allocations: 26262)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 10:10:50 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:11:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1580)
+Importmap skipped missing path: controllers/example_controller.js
+  Rendered layouts/_flash_message.html.erb (Duration: 1.2ms | Allocations: 236)
+  Rendered layouts/_header_beta.html.erb (Duration: 3.2ms | Allocations: 1724)
+  Rendered layouts/_bottom_btns.html.erb (Duration: 0.5ms | Allocations: 297)
+  Rendered layout layouts/application.html.erb (Duration: 73.5ms | Allocations: 18165)
+Completed 200 OK in 114ms (Views: 75.5ms | ActiveRecord: 7.4ms | Allocations: 28506)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 10:11:05 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+SyntaxError (/app/app/controllers/application_controller.rb:3: syntax error, unexpected local variable or method, expecting ']'
+    protect_from_forgery with: :exception 
+    ^~~~~~~~~~~~~~~~~~~~
+):
+  
+app/controllers/application_controller.rb:3: syntax error, unexpected local variable or method, expecting ']'
+app/controllers/application_controller.rb:3: syntax error, unexpected local variable or method, expecting ']'
+app/controllers/home_controller.rb:1:in `<main>'
+Started GET "/" for 172.18.0.1 at 2025-02-12 10:13:26 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (64.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 3.1ms | Allocations: 1147)
+Completed 200 OK in 115ms (Views: 4.2ms | ActiveRecord: 79.1ms | Allocations: 11026)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 10:15:43 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 6.1ms | Allocations: 1590)
+Completed 200 OK in 41ms (Views: 7.2ms | ActiveRecord: 10.7ms | Allocations: 11764)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 10:16:03 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 12.8ms | Allocations: 1577)
+Completed 200 OK in 34ms (Views: 16.6ms | ActiveRecord: 1.2ms | Allocations: 3375)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 10:16:18 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 5.1ms | Allocations: 1576)
+Completed 200 OK in 31ms (Views: 7.8ms | ActiveRecord: 1.0ms | Allocations: 3370)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 10:18:24 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 7.9ms | Allocations: 1580)
+Completed 200 OK in 35ms (Views: 10.4ms | ActiveRecord: 1.2ms | Allocations: 3374)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 10:19:08 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 32.7ms | Allocations: 1580)
+Completed 200 OK in 81ms (Views: 39.4ms | ActiveRecord: 2.0ms | Allocations: 3375)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 10:19:18 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (3.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 15.9ms | Allocations: 1580)
+Completed 200 OK in 53ms (Views: 19.4ms | ActiveRecord: 3.6ms | Allocations: 3374)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 10:19:58 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 5.7ms | Allocations: 1580)
+Completed 200 OK in 31ms (Views: 8.8ms | ActiveRecord: 1.3ms | Allocations: 3374)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 10:20:15 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (10.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 5.5ms | Allocations: 1580)
+Completed 200 OK in 40ms (Views: 8.9ms | ActiveRecord: 10.4ms | Allocations: 3374)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 10:20:52 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 24.7ms | Allocations: 1572)
+Completed 200 OK in 57ms (Views: 31.6ms | ActiveRecord: 2.5ms | Allocations: 3366)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 12:34:44 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 24.2ms | Allocations: 1572)
+Completed 200 OK in 272ms (Views: 37.9ms | ActiveRecord: 41.7ms | Allocations: 6331)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 12:48:59 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 683.1ms | Allocations: 44321)
+Completed 200 OK in 738ms (Views: 699.9ms | ActiveRecord: 3.0ms | Allocations: 51174)
+
+
+Started GET "/kazuma" for 172.18.0.1 at 2025-02-12 12:58:51 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as HTML
+  Parameters: {"slug"=>"kazuma"}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:45:in `show'
+  [1m[36mMicropost Count (10.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2[0m  [["user_id", 1], ["status", 1]]
+  ↳ app/controllers/users_controller.rb:47:in `show'
+  [1m[36mMicropost Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2[0m  [["user_id", 1], ["status", 0]]
+  ↳ app/controllers/users_controller.rb:48:in `show'
+  [1m[36mMicropost Load (1.0ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2 ORDER BY "microposts"."created_at" DESC[0m  [["user_id", 1], ["status", 1]]
+  ↳ app/controllers/users_controller.rb:49:in `show'
+  [1m[36mCACHE Micropost Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2[0m  [["user_id", 1], ["status", 0]]
+  ↳ app/controllers/users_controller.rb:50:in `show'
+  [1m[36mMicropost Pluck (0.5ms)[0m  [1m[34mSELECT "microposts"."created_at" FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2 ORDER BY "microposts"."created_at" DESC[0m  [["user_id", 1], ["status", 1]]
+  ↳ app/controllers/users_controller.rb:64:in `show'
+👷👷👷👷👷@posted_dates: [12, 12, 12, 23, 23, 23, 23, 23, 23, 21, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 18, 17]
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mMicropost Exists? (1.1ms)[0m  [1m[34mSELECT 1 AS one FROM "microposts" WHERE "microposts"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:35
+  [1m[36mCACHE Micropost Load (0.0ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2 ORDER BY "microposts"."created_at" DESC[0m  [["user_id", 1], ["status", 1]]
+  ↳ app/views/microposts/_micropost.html.erb:24
+  Rendered microposts/_micropost.html.erb (Duration: 62.4ms | Allocations: 10261)
+  Rendered users/show.html.erb within layouts/application (Duration: 76.9ms | Allocations: 11626)
+Importmap skipped missing path: controllers/example_controller.js
+  Rendered layouts/_flash_message.html.erb (Duration: 1.4ms | Allocations: 231)
+  Rendered layouts/_header_beta.html.erb (Duration: 8.4ms | Allocations: 1481)
+  Rendered layouts/_bottom_btns.html.erb (Duration: 1.0ms | Allocations: 336)
+  Rendered layout layouts/application.html.erb (Duration: 205.4ms | Allocations: 31769)
+Completed 200 OK in 444ms (Views: 209.8ms | ActiveRecord: 37.5ms | Allocations: 40623)
+
+
+Started GET "/login" for 172.18.0.1 at 2025-02-12 12:59:02 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 87.3ms | Allocations: 2775)
+Importmap skipped missing path: controllers/example_controller.js
+  Rendered layouts/_flash_message.html.erb (Duration: 0.9ms | Allocations: 265)
+  Rendered layouts/_header_beta.html.erb (Duration: 5.5ms | Allocations: 1535)
+  Rendered layouts/_bottom_btns.html.erb (Duration: 1.3ms | Allocations: 343)
+  Rendered layout layouts/application.html.erb (Duration: 161.4ms | Allocations: 19628)
+Completed 200 OK in 192ms (Views: 175.2ms | ActiveRecord: 0.0ms | Allocations: 20357)
+
+
+Started POST "/guest_login" for 172.18.0.1 at 2025-02-12 12:59:05 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#guest as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:54:in `guest'
+Redirected to http://localhost:3001/about
+Completed 302 Found in 198ms (ActiveRecord: 24.5ms | Allocations: 13818)
+
+
+Started GET "/about" for 172.18.0.1 at 2025-02-12 12:59:05 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#about as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 57.8ms | Allocations: 2557)
+  Rendered layouts/_flash_message.html.erb (Duration: 0.5ms | Allocations: 28)
+  Rendered layouts/_header_beta.html.erb (Duration: 3.6ms | Allocations: 1266)
+  Rendered layouts/_bottom_btns.html.erb (Duration: 0.1ms | Allocations: 139)
+  Rendered layout layouts/application.html.erb (Duration: 67.4ms | Allocations: 6300)
+Completed 200 OK in 79ms (Views: 69.2ms | ActiveRecord: 0.2ms | Allocations: 7607)
+
+
+Started GET "/test_user/zen" for 172.18.0.1 at 2025-02-12 12:59:07 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_new as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (8.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:74:in `zen_new'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/zen_new.html.erb within layouts/application
+  Rendered microposts/_flash_card_input.html.erb (Duration: 0.8ms | Allocations: 120)
+  Rendered microposts/zen_new.html.erb within layouts/application (Duration: 17.9ms | Allocations: 1657)
+  Rendered layouts/_flash_message.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered layouts/_header_beta.html.erb (Duration: 1.7ms | Allocations: 1190)
+  Rendered layouts/_bottom_btns.html.erb (Duration: 0.2ms | Allocations: 141)
+  Rendered layout layouts/application.html.erb (Duration: 28.4ms | Allocations: 5374)
+Completed 200 OK in 63ms (Views: 38.6ms | ActiveRecord: 8.6ms | Allocations: 7319)
+
+
+Started GET "/test_user/camera" for 172.18.0.1 at 2025-02-12 12:59:40 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#camera as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:38:in `camera'
+  Rendering layout layouts/application.html.erb
+  Rendering users/camera.html.erb within layouts/application
+  Rendered shared/_micropost_form.html.erb (Duration: 5.6ms | Allocations: 1426)
+  Rendered users/camera.html.erb within layouts/application (Duration: 35.5ms | Allocations: 3837)
+  Rendered layouts/_flash_message.html.erb (Duration: 0.1ms | Allocations: 21)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendered layouts/_header_beta.html.erb (Duration: 5.1ms | Allocations: 1781)
+  Rendered layouts/_bottom_btns.html.erb (Duration: 0.2ms | Allocations: 141)
+  Rendered layout layouts/application.html.erb (Duration: 45.4ms | Allocations: 7960)
+Completed 200 OK in 60ms (Views: 48.1ms | ActiveRecord: 1.8ms | Allocations: 9202)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 13:00:44 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 11.5ms | Allocations: 1107)
+Completed 200 OK in 30ms (Views: 12.9ms | ActiveRecord: 2.4ms | Allocations: 2495)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 13:08:14 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 423.0ms | Allocations: 36915)
+Completed 500 Internal Server Error in 524ms (ActiveRecord: 14.3ms | Allocations: 41608)
+
+
+  
+ActionView::Template::Error (Asset `quill.png` was not declared to be precompiled in production.
+Declare links to your assets in `app/assets/config/manifest.js`.
+
+  //= link quill.png
+
+and restart your server):
+    33: </button>
+    34: 
+    35: 
+    36: <%= image_tag("quill.png", class: "mx-auto max-w-[320px] h-auto rounded-lg") %>
+    37: 
+    38:  </div>
+    39: 
+  
+app/views/home/index.html.erb:36
+Started GET "/" for 172.18.0.1 at 2025-02-12 13:08:32 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 271.9ms | Allocations: 68398)
+Completed 200 OK in 427ms (Views: 274.4ms | ActiveRecord: 11.4ms | Allocations: 79944)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 13:10:28 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 11.2ms | Allocations: 1668)
+Completed 200 OK in 37ms (Views: 16.3ms | ActiveRecord: 1.8ms | Allocations: 3067)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 13:10:29 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 93.5ms | Allocations: 33834)
+Completed 200 OK in 115ms (Views: 94.8ms | ActiveRecord: 1.8ms | Allocations: 35222)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 13:10:39 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 17.3ms | Allocations: 1959)
+Completed 200 OK in 32ms (Views: 18.5ms | ActiveRecord: 1.7ms | Allocations: 3342)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 13:13:14 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (5.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 10.8ms | Allocations: 2165)
+Completed 200 OK in 42ms (Views: 15.0ms | ActiveRecord: 5.7ms | Allocations: 3961)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 13:13:42 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (4.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 13.7ms | Allocations: 2159)
+Completed 200 OK in 48ms (Views: 20.9ms | ActiveRecord: 4.3ms | Allocations: 3953)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 13:13:56 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 14.6ms | Allocations: 2266)
+Completed 200 OK in 42ms (Views: 19.2ms | ActiveRecord: 2.2ms | Allocations: 4063)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 13:14:10 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 8.1ms | Allocations: 2160)
+Completed 200 OK in 42ms (Views: 10.9ms | ActiveRecord: 2.2ms | Allocations: 3954)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 13:14:27 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 8.1ms | Allocations: 2159)
+Completed 200 OK in 37ms (Views: 11.0ms | ActiveRecord: 2.5ms | Allocations: 3953)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 13:14:43 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 9.3ms | Allocations: 2159)
+Completed 200 OK in 61ms (Views: 11.8ms | ActiveRecord: 1.5ms | Allocations: 3953)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 13:15:22 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 13.2ms | Allocations: 2161)
+Completed 200 OK in 46ms (Views: 18.3ms | ActiveRecord: 1.8ms | Allocations: 3955)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 13:15:40 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 13.3ms | Allocations: 2159)
+Completed 200 OK in 34ms (Views: 15.4ms | ActiveRecord: 1.8ms | Allocations: 3953)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 13:16:56 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 8.9ms | Allocations: 2160)
+Completed 200 OK in 31ms (Views: 11.8ms | ActiveRecord: 1.8ms | Allocations: 3967)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 13:16:57 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 12.3ms | Allocations: 1661)
+Completed 200 OK in 31ms (Views: 14.5ms | ActiveRecord: 1.7ms | Allocations: 3042)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 13:17:07 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 8.4ms | Allocations: 2159)
+Completed 200 OK in 35ms (Views: 11.3ms | ActiveRecord: 1.5ms | Allocations: 3953)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 13:17:07 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 6.6ms | Allocations: 1661)
+Completed 200 OK in 12ms (Views: 7.1ms | ActiveRecord: 0.5ms | Allocations: 3042)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 13:17:26 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 6.8ms | Allocations: 2159)
+Completed 200 OK in 29ms (Views: 9.5ms | ActiveRecord: 1.4ms | Allocations: 3953)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 13:17:39 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 21.3ms | Allocations: 2159)
+Completed 200 OK in 54ms (Views: 24.4ms | ActiveRecord: 1.7ms | Allocations: 3953)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 13:17:41 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 5.0ms | Allocations: 1662)
+Completed 200 OK in 16ms (Views: 6.8ms | ActiveRecord: 0.3ms | Allocations: 3043)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 13:17:41 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 4.8ms | Allocations: 1661)
+Completed 200 OK in 12ms (Views: 5.4ms | ActiveRecord: 0.4ms | Allocations: 3041)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 13:17:42 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 46.0ms | Allocations: 1664)
+Completed 200 OK in 53ms (Views: 47.3ms | ActiveRecord: 0.3ms | Allocations: 3045)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 13:17:42 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 3.4ms | Allocations: 1661)
+Completed 200 OK in 9ms (Views: 3.8ms | ActiveRecord: 0.2ms | Allocations: 3043)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 13:17:42 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 4.8ms | Allocations: 1662)
+Completed 200 OK in 15ms (Views: 5.4ms | ActiveRecord: 0.8ms | Allocations: 3042)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 13:17:43 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 8.1ms | Allocations: 1661)
+Completed 200 OK in 17ms (Views: 9.2ms | ActiveRecord: 0.3ms | Allocations: 3041)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 13:17:43 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 3.0ms | Allocations: 1661)
+Completed 200 OK in 8ms (Views: 3.3ms | ActiveRecord: 0.2ms | Allocations: 3041)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 13:18:25 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 16.1ms | Allocations: 2164)
+Completed 200 OK in 38ms (Views: 18.5ms | ActiveRecord: 1.8ms | Allocations: 3961)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 13:19:53 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 10.8ms | Allocations: 2164)
+Completed 200 OK in 45ms (Views: 13.5ms | ActiveRecord: 1.8ms | Allocations: 3958)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 13:20:25 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 7.7ms | Allocations: 2165)
+Completed 200 OK in 25ms (Views: 10.1ms | ActiveRecord: 1.1ms | Allocations: 3960)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 13:20:59 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 9.2ms | Allocations: 2164)
+Completed 200 OK in 43ms (Views: 12.0ms | ActiveRecord: 1.4ms | Allocations: 3958)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 13:24:53 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 11.2ms | Allocations: 2564)
+Completed 200 OK in 36ms (Views: 14.4ms | ActiveRecord: 1.6ms | Allocations: 4358)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 13:25:18 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 299.9ms | Allocations: 66648)
+Completed 200 OK in 326ms (Views: 303.3ms | ActiveRecord: 1.4ms | Allocations: 68443)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 13:26:58 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 12.1ms | Allocations: 2736)
+Completed 200 OK in 32ms (Views: 14.8ms | ActiveRecord: 1.3ms | Allocations: 4539)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 15:00:29 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 29.6ms | Allocations: 2205)
+Completed 200 OK in 261ms (Views: 35.0ms | ActiveRecord: 43.0ms | Allocations: 6536)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-12 15:27:45 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 263.2ms | Allocations: 67773)
+Completed 200 OK in 655ms (Views: 273.0ms | ActiveRecord: 28.0ms | Allocations: 72521)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-13 03:06:42 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 197.7ms | Allocations: 46158)
+Completed 200 OK in 264ms (Views: 200.3ms | ActiveRecord: 8.8ms | Allocations: 68102)
+
+
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE DATABASE "myapp_development" ENCODING = 'unicode'[0m
+  [1m[35m (95.4ms)[0m  [1m[35mCREATE DATABASE "myapp_test" ENCODING = 'unicode'[0m
+  [1m[35m (9.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20241117052834)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (3.9ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "name" character varying, "email" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20241117052834"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddIndexToUsersEmail (20241117062550)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20241117062550"]]
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddPasswordDigestToUsers (20241117063631)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "users" ADD "password_digest" character varying[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20241117063631"]]
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddRememberDigestToUsers (20241119055612)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "users" ADD "remember_digest" character varying[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20241119055612"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddAdminToUsers (20241123081744)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mALTER TABLE "users" ADD "admin" boolean DEFAULT FALSE[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20241123081744"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateMicroposts (20241123125540)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (4.0ms)[0m  [1m[35mCREATE TABLE "microposts" ("id" bigserial primary key, "content" text, "user_id" bigint NOT NULL, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL, CONSTRAINT "fk_rails_558c81314b"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE INDEX "index_microposts_on_user_id" ON "microposts" ("user_id")[0m
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE INDEX "index_microposts_on_user_id_and_created_at" ON "microposts" ("user_id", "created_at")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20241123125540"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddSlugToUsers (20241206155508)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "users" ADD "slug" character varying[0m
+  [1m[35m (0.8ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_slug" ON "users" ("slug")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20241206155508"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateFriendlyIdSlugs (20241206155545)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE TABLE "friendly_id_slugs" ("id" bigserial primary key, "slug" character varying NOT NULL, "sluggable_id" integer NOT NULL, "sluggable_type" character varying(50), "scope" character varying, "created_at" timestamp(6))[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE INDEX "index_friendly_id_slugs_on_sluggable_type_and_sluggable_id" ON "friendly_id_slugs" ("sluggable_type", "sluggable_id")[0m
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE INDEX "index_friendly_id_slugs_on_slug_and_sluggable_type" ON "friendly_id_slugs" ("slug", "sluggable_type")[0m
+  [1m[35m (2.4ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope" ON "friendly_id_slugs" ("slug", "sluggable_type", "scope")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20241206155545"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+Migrating to AddStatusToMicroposts (20241217122643)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mALTER TABLE "microposts" ADD "status" integer[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20241217122643"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2025-02-13 05:07:02.189528"], ["updated_at", "2025-02-13 05:07:02.189528"]]
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 172.18.0.1 at 2025-02-13 05:07:09 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 715.8ms | Allocations: 70558)
+Completed 200 OK in 761ms (Views: 720.3ms | ActiveRecord: 2.0ms | Allocations: 88021)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-13 05:07:24 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 185.2ms | Allocations: 45973)
+Completed 200 OK in 389ms (Views: 219.9ms | ActiveRecord: 5.9ms | Allocations: 58775)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-13 05:08:40 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 45.6ms | Allocations: 2202)
+Completed 200 OK in 98ms (Views: 48.4ms | ActiveRecord: 2.8ms | Allocations: 3838)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-13 05:09:44 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 9.5ms | Allocations: 2741)
+Completed 200 OK in 35ms (Views: 12.4ms | ActiveRecord: 1.5ms | Allocations: 4790)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-13 05:09:52 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 7.2ms | Allocations: 2736)
+Completed 200 OK in 23ms (Views: 9.4ms | ActiveRecord: 1.5ms | Allocations: 4779)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-13 05:10:02 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 7.4ms | Allocations: 2736)
+Completed 200 OK in 20ms (Views: 9.3ms | ActiveRecord: 1.2ms | Allocations: 4779)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-13 05:10:11 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 6.3ms | Allocations: 2732)
+Completed 200 OK in 19ms (Views: 8.3ms | ActiveRecord: 1.0ms | Allocations: 4762)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-13 05:10:25 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 7.2ms | Allocations: 2738)
+Completed 200 OK in 24ms (Views: 9.4ms | ActiveRecord: 1.5ms | Allocations: 4793)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-13 05:10:48 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (13.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 9.5ms | Allocations: 2733)
+Completed 200 OK in 50ms (Views: 12.6ms | ActiveRecord: 13.2ms | Allocations: 4776)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-13 05:11:52 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (4.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 12.4ms | Allocations: 1521)
+Completed 200 OK in 43ms (Views: 18.2ms | ActiveRecord: 4.0ms | Allocations: 3551)
+
+

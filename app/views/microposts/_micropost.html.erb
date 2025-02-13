@@ -1,0 +1,55 @@
+<!-- Add specific styles for headers -->
+<style>
+  .ql-editor h1 {
+    font-size: 2em;
+    font-weight: bold;
+  }
+  .ql-editor h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  .ql-editor h3 {
+    font-size: 1.17em;
+    font-weight: bold;
+  }
+  .ql-editor a{
+    color: #3b82f6; /* Tailwind's blue-500 */
+  }
+  .ql-editor {
+    padding: 0;  /* Remove default padding */
+    margin: 0;
+  }
+</style>
+
+  <% @microposts.published.each do |micropost| %>
+    <!-- 表示部分 -->
+    <div class="mt-2 p-3 rounded border shadow-md hover:shadow-lg transition-shadow duration-300">
+
+      <!-- コンテンツ部分 -->
+      <span class="text-gray-500 text-sm block"><%= micropost.created_at.strftime("%Y-%m-%d") %></span>
+
+      <div class="ql-editor !p-0">
+      <%= sanitize micropost.content, 
+        tags: %w(p br h1 h2 h3 h4 h5 h6 ul ol li strong em u s blockquote pre code span div img a),
+        attributes: %w(class style src alt href data-*) 
+      %>
+    </div>
+      
+      <% if current_user == @user %>
+        <div class="text-right">
+          <!-- 削除ボタン -->
+          <%= button_to "🗑️", micropost_path(slug: @user.slug, id: micropost.id), method: :delete, class: "text-red-500 hover:text-red-700 bg-transparent border-none cursor-pointer" %>
+          <!-- Xでシェアするボタン -->
+          <%= link_to "X",
+          "https://twitter.com/intent/tweet?text=#{CGI.escape("✏️ #{micropost.content[0, 100]}... \n\neigopencil.com/about #eigopencil #英語学習")}",
+            target: "_blank",
+            rel: "noopener noreferrer",
+            class: "text-white bg-gray-800 hover:bg-gray-700 px-2 py-1 rounded text-sm",
+            aria: { label: "Share this post on X" } %>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+
+<!-- Add Quill CSS to maintain styles -->
+<link href="https://cdn.jsdelivr.net/npm/quill@1.3.7/dist/quill.snow.css" rel="stylesheet">

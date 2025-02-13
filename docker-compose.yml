@@ -1,0 +1,60 @@
+# version: '3'
+# services:
+#   db:
+#     image: postgres:15
+#     volumes:
+#       - postgres_data:/var/lib/postgresql/data
+#     environment:
+#       POSTGRES_USER: myuser
+#       POSTGRES_PASSWORD: mypassword
+#       POSTGRES_DB: myapp_development
+
+#   web:
+#     build: .
+#     command: bash -c "rm -f tmp/pids/server.pid && bundle install && rails db:create db:migrate && rails server -b 0.0.0.0"
+#     volumes:
+#       - .:/app
+#     ports:
+#       - "3000:3000"
+#     depends_on:
+#       - db
+#     environment:
+#       DATABASE_HOST: db
+#       DATABASE_USER: myuser
+#       DATABASE_PASSWORD: mypassword
+#       DATABASE_NAME: myapp_development
+#       #DATABASE_URL: postgresql://mysite:FjgR8swZquSkHWjYG8LbN4cXea2oqQCr@dpg-ct4supilqhvc73a5cgl0-a/mysite_0kc4
+
+# volumes:
+#   postgres_data:
+version: '3'
+services:
+  db:
+    image: postgres:15
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: mypassword
+      POSTGRES_DB: myapp_development
+
+  web:
+    build: .
+    #command: bash -c "rm -f tmp/pids/server.pid && bundle install && rails db:create db:migrate && rails server -b 0.0.0.0"
+    command: bash -c "rm -f tmp/pids/server.pid && bin/rails db:create db:migrate && bin/dev"
+    volumes:
+      - .:/app
+    ports:
+      - "3001:3000" #hostの3001ポートにコンテナの3000ポートをマッピング。
+    depends_on:
+      - db
+    environment:
+      DATABASE_HOST: db
+      DATABASE_USER: myuser
+      DATABASE_PASSWORD: mypassword
+      DATABASE_NAME: myapp_development
+      PORT: 3000 
+      #DATABASE_URL: postgresql://mysite:FjgR8swZquSkHWjYG8LbN4cXea2oqQCr@dpg-ct4supilqhvc73a5cgl0-a/mysite_0kc4
+
+volumes:
+  postgres_data:

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+  <!-- Importmap -->
+  <%= javascript_importmap_tags %>
+  <!-- Stylesheets -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>eigopencil</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= favicon_link_tag "favicon.ico" %>
+
+
+ 
+  
+  <!-- TailwindCSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!--Alpine.js nav用(https://alpinejs.dev/start-here#building-a-dropdown)-->
+  <script src="//unpkg.com/alpinejs" defer></script>
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@imnotkatsuma">
+  <meta name="twitter:title" content="EigoPencil - 英語学習のためのマイクロポスト">
+  <meta name="twitter:description" content="✏️ マイクロポストの内容...">
+  <meta name="twitter:image" content="<%= Rails.env.production? ? "https://eigopencil.com#{asset_path('welcome.png')}" : "https://eigopencil.com/path/to/your/welcome.png" %>">
+
+
+  <meta property="og:title" content="EigoPencil - 英語学習のためのマイクロポスト">
+  <meta property="og:description" content="✏️ マイクロポストの内容...">
+  <meta property="og:image" content="<%= Rails.env.production? ? "https://eigopencil.com#{asset_path('welcome.png')}" : "https://eigopencil.com/path/to/your/welcome.png" %>">
+  <meta property="og:url" content="<%= request.original_url %>">
+
+<!--google font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Lexend:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  
+</head>
+
+<style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+.nunito-<uniquifier> {
+  font-family: "Nunito", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+      .links ul {
+        list-style-type: none; /* 点を消す */
+        padding: 0; /* 左側の余白を削除 */
+        margin: 0; /* 外側の余白を削除（必要に応じて） */
+      }
+      .diary-container {
+        max-width: 600px;
+        width: 100%;
+        background: white;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .diary-input {
+        margin-bottom: 20px;
+      }
+      .diary-entries {
+        margin-top: 20px;
+      }
+
+.floating-circle-upper {
+  position: fixed;
+  bottom: 90px; /* 画面の下から20pxの位置 */
+  left: 30px; /* 画面の左から20pxの位置 */
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  color: white;
+  border-radius: 50%; /* 丸くする */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 軽いシャドウ効果 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1000; /* 他の要素の上に表示 */
+  transition: background-color 0.3s ease;
+}
+.floating-circle-buttom {
+  position: fixed;
+  bottom: 20px; /* 画面の下から20pxの位置 */
+  left: 20px; /* 画面の左から20pxの位置 */
+  width: 60px;
+  height: 60px;
+  background-color: #eaad42;
+  color: white;
+  border-radius: 50%; /* 丸くする */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 軽いシャドウ効果 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1000; /* 他の要素の上に表示 */
+  transition: background-color 0.3s ease;
+}
+.floating-circle:hover {
+  background-color: #e2a234; /* ホバー時の色 */
+}
+.no-underline {
+    text-decoration: none; /* 下線を無効化 */
+  }
+
+  .no-underline:hover {
+    text-decoration: none; /* ホバー時も下線を無効化 */
+  }
+button:focus {
+    outline: none;
+  }
+
+#tailwind CSS (https://tailwindcss.com/docs/guides/ruby-on-rails)
+</style>
+
+<body>
+
+<%= render 'layouts/flash_message' %>
+<%= render 'layouts/header_beta' %>
+<%= render 'layouts/bottom_btns' %>
+
+<%= yield %>
+  
+
+
+
+
+  <div class="mt-12" style="height: 50px;"></div>
+
+</body>
+</html>

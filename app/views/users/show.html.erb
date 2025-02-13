@@ -1,0 +1,52 @@
+<div class="profile-sectiob">
+<% provide(:title, @user.name) %>
+
+  <h4 class="text-center text-2xl m-7"><%= @user.name %></h4>   
+
+  <skip_before_action>
+ 
+<!--
+<p class="mt-3 text-brown-600 px-4 py-2 text-white rounded-full border border-yellow-300 shadow-md inline-block" style="background-color: #eaad42;">
+  <%= @posted_sum %> posts published🚀
+</p>
+
+<p class="text-brown-600 px-4 py-2 text-white rounded-full border border-yellow-300 shadow-md inline-block" style="background-color: #eaad42;">
+  shared <%= @total_posts_characters %> words. yay!!<span>🎉</span>
+</p>
+
+<p class="text-brown-600 px-4 py-2 text-white rounded-full border border-yellow-300 shadow-md inline-block" style="background-color: #eaad42;">
+<%= @draft_sum %> posts sleep in draft😴
+</p>
+
+<p class="text-brown-600 px-4 py-2 text-white rounded-full border border-yellow-300 shadow-md inline-block" style="background-color: #eaad42;">
+consistent for a <%= @posted_dates_sum %> days😤
+</p>
+-->
+
+
+
+<% if current_user == @user %>
+<div class="flex justify-end mb-4">
+  <%= link_to "draft📝", draft_path(current_user), class: "bg-gray-100 text-gray-800 rounded hover:bg-gray-200 transition duration-300 px-4 py-2 mr-4" %>
+</div>
+<% end %>
+
+
+<% if @user.microposts.any? %>
+    <div class="m-3">
+    <%= render partial: 'microposts/micropost' %>
+    </div>
+<% end %>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+

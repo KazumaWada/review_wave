@@ -1,0 +1,91 @@
+<!--Alpine.js を使用。-->
+<div class="relative flex justify-between items-center p-4 relative z-10">
+  <!-- ロゴ -->
+  <div class="logo-container">
+    <%= link_to root_path, class: "logo-link" do %>
+      <%= image_tag("logo01.png", class: "logo") %>
+    <% end %>
+  </div>
+
+  <!-- menubar -->
+  <div x-data="{ open: false }" class="fixed top-0 right-0 z-10 p-4">
+    <!-- 3本線 -->
+    <button @click="open = ! open" class="">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+    </svg>
+   </button>
+
+    <!-- home -->
+    <div x-show="open" @click.outside="open = false">
+      <%= link_to(
+          root_path, 
+          class: "text-dark text-decoration-none d-flex align-items-center text-3xl", 
+          data: { turbo: false }) do %>
+       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10">
+       <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+       </svg>
+      <% end %>
+    </div>
+
+    <!-- user -->
+    <div x-show="open" @click.outside="open = false">
+      <%= link_to(
+          current_user ? current_user : login_path,
+          class: "text-dark text-decoration-none text-3xl",
+          data: { turbo: false }
+        ) do %>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+        </svg>
+      <% end %>
+    </div>
+
+    <!-- book -->
+    <div x-show="open" @click.outside="open = false">
+      <%= link_to(
+          books_path,
+          class: "text-dark text-decoration-none text-3xl",
+          data: { turbo: false }
+        ) do %>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10">
+       <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
+       </svg>
+      <% end %>
+    </div>
+
+    <!-- about -->
+    <div x-show="open" @click.outside="open = false">
+      <%= link_to(
+          about_path,
+          class: "text-dark text-decoration-none text-3xl",
+          data: { turbo: false }
+        ) do %>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
+        </svg>
+      <% end %>
+    </div>
+
+    <% if current_user %>
+    <!-- logout -->
+    <div x-show="open" @click.outside="open = false">
+      <%= button_to(
+        logout_path,
+        method: :delete,
+        class: "text-dark text-decoration-none text-3xl",
+        data: { turbo: false },
+        ) do %>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-10">
+       <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 9V5.25A2.25 2.25 0 0 0 13.5 3h-6a2.25 2.25 0 0 0-2.25 2.25v13.5A2.25 2.25 0 0 0 7.5 21h6a2.25 2.25 0 0 0 2.25-2.25V15m3 0 3-3m0 0-3-3m3 3H9" />
+       </svg>
+      <% end %>
+    </div>
+    <% end %>
+
+
+  </div>
+</div>
+
+
+
