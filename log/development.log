@@ -2072,3 +2072,1875 @@ Processing by HomeController#index as HTML
 Completed 200 OK in 43ms (Views: 18.2ms | ActiveRecord: 4.0ms | Allocations: 3551)
 
 
+[dotenv] Set [36mMAILGUN_API_KEY[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (1.5ms)[0m  [1m[35mCREATE DATABASE "myapp_development" ENCODING = 'unicode'[0m
+  [1m[35m (0.6ms)[0m  [1m[35mCREATE DATABASE "myapp_test" ENCODING = 'unicode'[0m
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (6.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (6.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[dotenv] Set [36mMAILGUN_API_KEY[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for 172.18.0.1 at 2025-02-15 10:05:56 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 1061.2ms | Allocations: 70863)
+Completed 200 OK in 1157ms (Views: 1067.3ms | ActiveRecord: 5.7ms | Allocations: 87093)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-15 13:06:15 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (6.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 655.1ms | Allocations: 45099)
+Completed 200 OK in 938ms (Views: 658.7ms | ActiveRecord: 33.5ms | Allocations: 57805)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-15 14:56:48 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (4.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 114.4ms | Allocations: 1307)
+Completed 200 OK in 976ms (Views: 144.0ms | ActiveRecord: 87.4ms | Allocations: 5909)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-17 08:10:21 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 240.8ms | Allocations: 44988)
+Completed 200 OK in 677ms (Views: 243.1ms | ActiveRecord: 10.2ms | Allocations: 57647)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-17 08:14:57 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 166.6ms | Allocations: 44790)
+Completed 200 OK in 355ms (Views: 169.1ms | ActiveRecord: 4.4ms | Allocations: 57444)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-17 08:41:49 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 12.3ms | Allocations: 2079)
+Completed 200 OK in 106ms (Views: 14.2ms | ActiveRecord: 11.0ms | Allocations: 10855)
+
+
+Started POST "/guest_login" for 172.18.0.1 at 2025-02-17 08:41:56 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#guest as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:54:in `guest'
+  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/sessions_controller.rb:54:in `guest'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."id" IS NOT NULL AND "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:54:in `guest'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:54:in `guest'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:54:in `guest'
+  [1m[36mUser Exists? (13.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE LOWER("users"."email") = LOWER($1) LIMIT $2[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:54:in `guest'
+  [1m[36mUser Create (19.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest", "remember_digest", "admin", "slug") VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING "id"[0m  [["name", "test_user"], ["email", "test@gmail.com"], ["created_at", "2025-02-17 08:41:56.971730"], ["updated_at", "2025-02-17 08:41:56.971730"], ["password_digest", "[FILTERED]"], ["remember_digest", nil], ["admin", false], ["slug", "test_user"]]
+  ↳ app/controllers/sessions_controller.rb:54:in `guest'
+  [1m[36mTRANSACTION (4.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/sessions_controller.rb:54:in `guest'
+Completed 500 Internal Server Error in 561ms (ActiveRecord: 81.1ms | Allocations: 72902)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"zen_new", :controller=>"microposts"}, missing required keys: [:slug]):
+  
+app/controllers/sessions_controller.rb:68:in `guest'
+Started GET "/" for 172.18.0.1 at 2025-02-17 08:42:18 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "kazuma"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 5.9ms | Allocations: 1941)
+Completed 200 OK in 29ms (Views: 6.9ms | ActiveRecord: 5.9ms | Allocations: 8275)
+
+
+Started POST "/guest_login" for 172.18.0.1 at 2025-02-17 08:42:20 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#guest as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:54:in `guest'
+Redirected to http://localhost:3001/about
+Completed 302 Found in 16ms (ActiveRecord: 4.1ms | Allocations: 3308)
+
+
+Started GET "/about" for 172.18.0.1 at 2025-02-17 08:42:20 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#about as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering home/about.html.erb within layouts/application
+  Rendered home/about.html.erb within layouts/application (Duration: 14.5ms | Allocations: 2585)
+Importmap skipped missing path: controllers/example_controller.js
+  Rendered layouts/_flash_message.html.erb (Duration: 0.8ms | Allocations: 250)
+  Rendered layouts/_header_beta.html.erb (Duration: 8.3ms | Allocations: 1751)
+  Rendered layouts/_bottom_btns.html.erb (Duration: 1.7ms | Allocations: 301)
+  Rendered layout layouts/application.html.erb (Duration: 53.5ms | Allocations: 19639)
+Completed 200 OK in 61ms (Views: 55.2ms | ActiveRecord: 0.3ms | Allocations: 20842)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-17 08:42:49 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 5.0ms | Allocations: 1704)
+Completed 200 OK in 106ms (Views: 6.4ms | ActiveRecord: 21.4ms | Allocations: 20553)
+
+
+Started POST "/guest_login" for 172.18.0.1 at 2025-02-17 08:42:52 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#guest as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:54:in `guest'
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.4ms | Allocations: 2010)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"zen_new", :controller=>"microposts"}, missing required keys: [:slug]):
+  
+app/controllers/sessions_controller.rb:68:in `guest'
+Started GET "/" for 172.18.0.1 at 2025-02-17 08:45:40 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 7.0ms | Allocations: 1693)
+Completed 200 OK in 44ms (Views: 8.4ms | ActiveRecord: 7.6ms | Allocations: 11631)
+
+
+Started POST "/guest_login" for 172.18.0.1 at 2025-02-17 08:45:41 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#guest as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:54:in `guest'
+Redirected to http://localhost:3001/test_user/zen
+Completed 302 Found in 45ms (ActiveRecord: 3.4ms | Allocations: 5886)
+
+
+Started GET "/test_user/zen" for 172.18.0.1 at 2025-02-17 08:45:41 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_new as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:74:in `zen_new'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/zen_new.html.erb within layouts/application
+  Rendered microposts/_flash_card_input.html.erb (Duration: 1.6ms | Allocations: 120)
+  Rendered microposts/zen_new.html.erb within layouts/application (Duration: 20.3ms | Allocations: 1806)
+Importmap skipped missing path: controllers/example_controller.js
+  Rendered layouts/_flash_message.html.erb (Duration: 0.1ms | Allocations: 24)
+  Rendered layouts/_header_beta.html.erb (Duration: 2.3ms | Allocations: 1203)
+  Rendered layouts/_bottom_btns.html.erb (Duration: 0.2ms | Allocations: 141)
+  Rendered layout layouts/application.html.erb (Duration: 47.1ms | Allocations: 17226)
+Completed 200 OK in 69ms (Views: 50.7ms | ActiveRecord: 1.5ms | Allocations: 22936)
+
+
+Started GET "/test_user/zen" for 172.18.0.1 at 2025-02-17 08:47:30 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_new as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:74:in `zen_new'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/zen_new.html.erb within layouts/application
+  Rendered microposts/zen_new.html.erb within layouts/application (Duration: 12.4ms | Allocations: 1023)
+  Rendered layouts/_flash_message.html.erb (Duration: 0.7ms | Allocations: 232)
+  Rendered layouts/_header_beta.html.erb (Duration: 3.3ms | Allocations: 1648)
+  Rendered layouts/_bottom_btns.html.erb (Duration: 0.7ms | Allocations: 296)
+  Rendered layout layouts/application.html.erb (Duration: 26.8ms | Allocations: 6145)
+Completed 200 OK in 45ms (Views: 29.8ms | ActiveRecord: 1.3ms | Allocations: 8213)
+
+
+Started GET "/test_user/zen" for 172.18.0.1 at 2025-02-17 08:48:22 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_new as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:74:in `zen_new'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/zen_new.html.erb within layouts/application
+  Rendered microposts/zen_new.html.erb within layouts/application (Duration: 6.4ms | Allocations: 1022)
+  Rendered layouts/_flash_message.html.erb (Duration: 2.1ms | Allocations: 232)
+  Rendered layouts/_header_beta.html.erb (Duration: 5.0ms | Allocations: 1648)
+  Rendered layouts/_bottom_btns.html.erb (Duration: 2.3ms | Allocations: 296)
+  Rendered layout layouts/application.html.erb (Duration: 35.0ms | Allocations: 6145)
+Completed 200 OK in 65ms (Views: 38.8ms | ActiveRecord: 1.7ms | Allocations: 8196)
+
+
+Started GET "/test_user/zen" for 172.18.0.1 at 2025-02-17 08:48:31 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_new as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:74:in `zen_new'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/zen_new.html.erb within layouts/application
+  Rendered microposts/zen_new.html.erb within layouts/application (Duration: 12.4ms | Allocations: 1407)
+Importmap skipped missing path: controllers/example_controller.js
+  Rendered layouts/_flash_message.html.erb (Duration: 0.9ms | Allocations: 245)
+  Rendered layouts/_header_beta.html.erb (Duration: 2.8ms | Allocations: 1731)
+  Rendered layouts/_bottom_btns.html.erb (Duration: 0.6ms | Allocations: 303)
+  Rendered layout layouts/application.html.erb (Duration: 43.0ms | Allocations: 18485)
+Completed 200 OK in 79ms (Views: 48.6ms | ActiveRecord: 1.7ms | Allocations: 20710)
+
+
+Started GET "/test_user/zen" for 172.18.0.1 at 2025-02-17 08:48:45 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_new as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:74:in `zen_new'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/zen_new.html.erb within layouts/application
+  Rendered microposts/zen_new.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1022)
+  Rendered layouts/_flash_message.html.erb (Duration: 2.1ms | Allocations: 232)
+  Rendered layouts/_header_beta.html.erb (Duration: 7.4ms | Allocations: 1648)
+  Rendered layouts/_bottom_btns.html.erb (Duration: 0.8ms | Allocations: 296)
+  Rendered layout layouts/application.html.erb (Duration: 32.3ms | Allocations: 6144)
+Completed 200 OK in 47ms (Views: 36.1ms | ActiveRecord: 1.0ms | Allocations: 8192)
+
+
+Started GET "/test_user/zen" for 172.18.0.1 at 2025-02-17 08:50:03 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_new as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:74:in `zen_new'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/zen_new.html.erb within layouts/application
+  Rendered microposts/zen_new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1025)
+  Rendered layouts/_flash_message.html.erb (Duration: 0.7ms | Allocations: 232)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 3998)
+Completed 200 OK in 74ms (Views: 14.7ms | ActiveRecord: 1.5ms | Allocations: 6048)
+
+
+Started GET "/test_user/zen" for 172.18.0.1 at 2025-02-17 08:50:20 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_new as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:74:in `zen_new'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/zen_new.html.erb within layouts/application
+  Rendered microposts/zen_new.html.erb within layouts/application (Duration: 6.5ms | Allocations: 1022)
+  Rendered layouts/_flash_message.html.erb (Duration: 0.8ms | Allocations: 232)
+  Rendered layout layouts/application.html.erb (Duration: 16.7ms | Allocations: 3967)
+Completed 200 OK in 75ms (Views: 25.4ms | ActiveRecord: 1.7ms | Allocations: 6024)
+
+
+Started GET "/test_user/zen" for 172.18.0.1 at 2025-02-17 08:50:36 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_new as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:74:in `zen_new'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/zen_new.html.erb within layouts/application
+  Rendered microposts/zen_new.html.erb within layouts/application (Duration: 24.3ms | Allocations: 1022)
+  Rendered layouts/_flash_message.html.erb (Duration: 0.8ms | Allocations: 233)
+  Rendered layout layouts/application.html.erb (Duration: 47.6ms | Allocations: 3976)
+Completed 200 OK in 73ms (Views: 51.8ms | ActiveRecord: 1.5ms | Allocations: 6018)
+
+
+[dotenv] Set [36mMAILGUN_API_KEY[0m
+[dotenv] Loaded [33m.env[0m
+[dotenv] Set [36mMAILGUN_API_KEY[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddGuestEmailToMicroposts (20250217090934)
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (6.9ms)[0m  [1m[35mALTER TABLE "microposts" ADD "guest_email" character varying[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20250217090934"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/test_user/zen" for 172.18.0.1 at 2025-02-17 09:13:07 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MicropostsController#zen_new as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:74:in `zen_new'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/zen_new.html.erb within layouts/application
+  Rendered microposts/zen_new.html.erb within layouts/application (Duration: 28.4ms | Allocations: 1437)
+  Rendered layout layouts/application.html.erb (Duration: 28.8ms | Allocations: 1525)
+Completed 500 Internal Server Error in 73ms (ActiveRecord: 2.0ms | Allocations: 10461)
+
+
+  
+ActionView::Template::Error (undefined method `field' for #<ActionView::Helpers::FormBuilder:0x0000ffffa8196240 @nested_child_index={}, @options={:allow_method_names_outside_object=>true, :skip_default_ids=>false, :method=>:post, :local=>true, :data=>{:turbo=>false}}, @template=#<ActionView::Base:0x000000000241a8>, @object=#<Micropost id: nil, content: nil, user_id: nil, created_at: nil, updated_at: nil, status: nil>, @object_name="micropost", @default_options={:skip_default_ids=>false, :allow_method_names_outside_object=>true}, @default_html_options={}, @multipart=nil, @index=nil>):
+    4:     ⚠️ べータ版: 最大1000文字までです。1枚の写真を入れると1000文字分を超過してしまいます。調節中です🙇‍♂️
+    5:    </p>
+    6: 
+    7:    <%= f.field :guest_email %>
+    8: 
+    9:     <!-- Quill editor container -->
+   10:     <div data-quill-target="editor" class="min-h-[500px] h-auto"></div>
+  
+app/views/microposts/zen_new.html.erb:7
+app/views/microposts/zen_new.html.erb:2
+Started GET "/test_user/zen" for 172.18.0.1 at 2025-02-17 09:13:54 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_new as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:74:in `zen_new'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/zen_new.html.erb within layouts/application
+  Rendered microposts/zen_new.html.erb within layouts/application (Duration: 9.7ms | Allocations: 1330)
+Importmap skipped missing path: controllers/example_controller.js
+  Rendered layouts/_flash_message.html.erb (Duration: 0.9ms | Allocations: 233)
+  Rendered layout layouts/application.html.erb (Duration: 87.6ms | Allocations: 15956)
+Completed 200 OK in 120ms (Views: 91.5ms | ActiveRecord: 1.6ms | Allocations: 18003)
+
+
+Started GET "/test_user/zen" for 172.18.0.1 at 2025-02-17 09:15:11 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_new as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:74:in `zen_new'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/zen_new.html.erb within layouts/application
+  Rendered microposts/zen_new.html.erb within layouts/application (Duration: 43.5ms | Allocations: 3867)
+  Rendered layouts/_flash_message.html.erb (Duration: 1.5ms | Allocations: 232)
+  Rendered layout layouts/application.html.erb (Duration: 71.2ms | Allocations: 6806)
+Completed 200 OK in 91ms (Views: 76.0ms | ActiveRecord: 1.6ms | Allocations: 8865)
+
+
+Started GET "/test_user/zen" for 172.18.0.1 at 2025-02-17 09:16:09 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_new as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:74:in `zen_new'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/zen_new.html.erb within layouts/application
+  Rendered microposts/zen_new.html.erb within layouts/application (Duration: 6.1ms | Allocations: 1217)
+  Rendered layouts/_flash_message.html.erb (Duration: 2.0ms | Allocations: 235)
+  Rendered layout layouts/application.html.erb (Duration: 45.8ms | Allocations: 4181)
+Completed 200 OK in 83ms (Views: 51.0ms | ActiveRecord: 3.3ms | Allocations: 6251)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-17 09:16:28 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 8.7ms | Allocations: 1892)
+Completed 200 OK in 65ms (Views: 10.2ms | ActiveRecord: 1.5ms | Allocations: 6309)
+
+
+Started POST "/guest_login" for 172.18.0.1 at 2025-02-17 09:16:30 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#guest as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:54:in `guest'
+Redirected to http://localhost:3001/test_user/zen
+Completed 302 Found in 43ms (ActiveRecord: 1.2ms | Allocations: 5745)
+
+
+Started GET "/test_user/zen" for 172.18.0.1 at 2025-02-17 09:16:30 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_new as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:74:in `zen_new'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/zen_new.html.erb within layouts/application
+  Rendered microposts/zen_new.html.erb within layouts/application (Duration: 7.0ms | Allocations: 1591)
+Importmap skipped missing path: controllers/example_controller.js
+  Rendered layouts/_flash_message.html.erb (Duration: 0.8ms | Allocations: 238)
+  Rendered layout layouts/application.html.erb (Duration: 26.5ms | Allocations: 16189)
+Completed 200 OK in 46ms (Views: 28.7ms | ActiveRecord: 0.4ms | Allocations: 20880)
+
+
+Started GET "/test_user/zen" for 172.18.0.1 at 2025-02-17 09:17:39 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_new as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:74:in `zen_new'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/zen_new.html.erb within layouts/application
+  Rendered microposts/zen_new.html.erb within layouts/application (Duration: 8.1ms | Allocations: 1217)
+  Rendered layouts/_flash_message.html.erb (Duration: 1.0ms | Allocations: 232)
+  Rendered layout layouts/application.html.erb (Duration: 25.0ms | Allocations: 4156)
+Completed 200 OK in 46ms (Views: 29.1ms | ActiveRecord: 1.5ms | Allocations: 6182)
+
+
+Started GET "/test_user/zen" for 172.18.0.1 at 2025-02-17 09:17:41 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_new as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:74:in `zen_new'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/zen_new.html.erb within layouts/application
+  Rendered microposts/zen_new.html.erb within layouts/application (Duration: 7.3ms | Allocations: 799)
+  Rendered layouts/_flash_message.html.erb (Duration: 0.3ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 26.4ms | Allocations: 3002)
+Completed 200 OK in 55ms (Views: 32.1ms | ActiveRecord: 1.7ms | Allocations: 4463)
+
+
+Started GET "/test_user/zen" for 172.18.0.1 at 2025-02-17 09:17:54 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_new as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:74:in `zen_new'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/zen_new.html.erb within layouts/application
+  Rendered microposts/zen_new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1224)
+  Rendered layouts/_flash_message.html.erb (Duration: 0.5ms | Allocations: 233)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 4192)
+Completed 200 OK in 28ms (Views: 17.0ms | ActiveRecord: 1.2ms | Allocations: 6216)
+
+
+Started GET "/test_user/zen" for 172.18.0.1 at 2025-02-17 09:18:21 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_new as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:74:in `zen_new'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/zen_new.html.erb within layouts/application
+  Rendered microposts/zen_new.html.erb within layouts/application (Duration: 21.3ms | Allocations: 1217)
+  Rendered layouts/_flash_message.html.erb (Duration: 1.0ms | Allocations: 232)
+  Rendered layout layouts/application.html.erb (Duration: 41.2ms | Allocations: 4165)
+Completed 200 OK in 63ms (Views: 48.0ms | ActiveRecord: 1.6ms | Allocations: 6193)
+
+
+Started GET "/test_user/zen" for 172.18.0.1 at 2025-02-17 09:19:49 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_new as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:74:in `zen_new'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/zen_new.html.erb within layouts/application
+  Rendered microposts/zen_new.html.erb within layouts/application (Duration: 10.4ms | Allocations: 1219)
+  Rendered layouts/_flash_message.html.erb (Duration: 0.9ms | Allocations: 232)
+  Rendered layout layouts/application.html.erb (Duration: 30.3ms | Allocations: 4160)
+Completed 200 OK in 55ms (Views: 34.4ms | ActiveRecord: 1.7ms | Allocations: 6191)
+
+
+Started POST "/test_user/zen_create" for 172.18.0.1 at 2025-02-17 09:25:01 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "micropost"=>{"guest_email"=>"wadakazumaa@gmail.com", "content"=>"<p>test</p>"}, "commit"=>"✅投稿", "slug"=>"test_user"}
+🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️Params: #<ActionController::Parameters {"authenticity_token"=>"PJDQrs734LQLxIm3IbGElkvutSbkfaau5cw_ZSuBmimjztCuSWc_aV6cOz8CgKggY_IEWPtmV87x-4kD31j3Pg", "micropost"=>{"guest_email"=>"wadakazumaa@gmail.com", "content"=>"<p>test</p>"}, "commit"=>"✅投稿", "controller"=>"microposts", "action"=>"zen_create", "slug"=>"test_user"} permitted: false>
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:84:in `zen_create'
+[31mUnpermitted parameter: :guest_email. Context: { controller: MicropostsController, action: zen_create, request: #<ActionDispatch::Request:0x0000ffffa84ba480>, params: {"authenticity_token"=>"[FILTERED]", "micropost"=>{"guest_email"=>"wadakazumaa@gmail.com", "content"=>"<p>test</p>"}, "commit"=>"✅投稿", "controller"=>"microposts", "action"=>"zen_create", "slug"=>"test_user"} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/microposts_controller.rb:95:in `zen_create'
+  [1m[36mMicropost Create (9.4ms)[0m  [1m[32mINSERT INTO "microposts" ("content", "user_id", "created_at", "updated_at", "status") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["content", "<p>test</p>"], ["user_id", 1], ["created_at", "2025-02-17 09:25:01.275057"], ["updated_at", "2025-02-17 09:25:01.275057"], ["status", 1]]
+  ↳ app/controllers/microposts_controller.rb:95:in `zen_create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/microposts_controller.rb:95:in `zen_create'
+Completed 500 Internal Server Error in 106ms (ActiveRecord: 17.8ms | Allocations: 14670)
+
+
+  
+NoMethodError (undefined method `guest_email' for #<Micropost id: 1, content: "<p>test</p>", user_id: 1, created_at: "2025-02-17 09:25:01.275057000 +0000", updated_at: "2025-02-17 09:25:01.275057000 +0000", status: "published">):
+  
+app/controllers/microposts_controller.rb:96:in `zen_create'
+Started GET "/test_user/zen" for 172.18.0.1 at 2025-02-17 09:27:34 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_new as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:74:in `zen_new'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/zen_new.html.erb within layouts/application
+  Rendered microposts/zen_new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1287)
+Importmap skipped missing path: controllers/example_controller.js
+  Rendered layouts/_flash_message.html.erb (Duration: 1.2ms | Allocations: 233)
+  Rendered layout layouts/application.html.erb (Duration: 41.4ms | Allocations: 15856)
+Completed 200 OK in 76ms (Views: 42.9ms | ActiveRecord: 10.6ms | Allocations: 26065)
+
+
+Started POST "/test_user/zen_create" for 172.18.0.1 at 2025-02-17 09:27:41 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "micropost"=>{"guest_email"=>"wadakazumaa@gmail.com", "content"=>"<p>test</p>"}, "commit"=>"✅投稿", "slug"=>"test_user"}
+🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️Params: #<ActionController::Parameters {"authenticity_token"=>"RpYCnvX9cgqypQu72OpFfvLaMR4zbbQJPDTgs344ff3ZyAKecm2t1-f9uTP722nI2saAYCx2RWkoA1bViuEQ6g", "micropost"=>{"guest_email"=>"wadakazumaa@gmail.com", "content"=>"<p>test</p>"}, "commit"=>"✅投稿", "controller"=>"microposts", "action"=>"zen_create", "slug"=>"test_user"} permitted: false>
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:84:in `zen_create'
+Completed 500 Internal Server Error in 78ms (ActiveRecord: 12.4ms | Allocations: 11727)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'guest_email' for Micropost.):
+  
+app/controllers/microposts_controller.rb:86:in `zen_create'
+[dotenv] Set [36mMAILGUN_API_KEY[0m
+[dotenv] Loaded [33m.env[0m
+  [1m[35m (6.9ms)[0m  [1m[35mCREATE DATABASE "myapp_development" ENCODING = 'unicode'[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE "myapp_test" ENCODING = 'unicode'[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7864839756650184315)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT pg_advisory_unlock(7864839756650184315)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+[dotenv] Set [36mMAILGUN_API_KEY[0m
+[dotenv] Loaded [33m.env[0m
+Started GET "/" for 172.18.0.1 at 2025-02-17 09:31:06 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 816.2ms | Allocations: 71914)
+Completed 200 OK in 941ms (Views: 822.9ms | ActiveRecord: 15.4ms | Allocations: 101369)
+
+
+Started POST "/guest_login" for 172.18.0.1 at 2025-02-17 09:31:11 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by SessionsController#guest as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:54:in `guest'
+Redirected to http://localhost:3001/test_user/zen
+Completed 302 Found in 91ms (ActiveRecord: 3.6ms | Allocations: 13451)
+
+
+Started GET "/test_user/zen" for 172.18.0.1 at 2025-02-17 09:31:11 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_new as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:74:in `zen_new'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/zen_new.html.erb within layouts/application
+  Rendered microposts/zen_new.html.erb within layouts/application (Duration: 7.9ms | Allocations: 2474)
+Importmap skipped missing path: controllers/example_controller.js
+  Rendered layouts/_flash_message.html.erb (Duration: 0.6ms | Allocations: 257)
+  Rendered layout layouts/application.html.erb (Duration: 135.7ms | Allocations: 59826)
+Completed 200 OK in 150ms (Views: 137.8ms | ActiveRecord: 1.1ms | Allocations: 68612)
+
+
+Started POST "/test_user/zen_create" for 172.18.0.1 at 2025-02-17 09:31:21 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "micropost"=>{"guest_email"=>"wadakazumaa@gmail.com", "content"=>"<p>test</p>"}, "commit"=>"✅投稿", "slug"=>"test_user"}
+🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️Params: #<ActionController::Parameters {"authenticity_token"=>"GrN0J46bUv2CKs-ZpWAEmxj0tLYYIWMJ88-PCyMRvGmF7XQnCQuNINdyfRGGUSgtMOgFyAc6kmnn-Dlt18jRfg", "micropost"=>{"guest_email"=>"wadakazumaa@gmail.com", "content"=>"<p>test</p>"}, "commit"=>"✅投稿", "controller"=>"microposts", "action"=>"zen_create", "slug"=>"test_user"} permitted: false>
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:84:in `zen_create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/microposts_controller.rb:95:in `zen_create'
+  [1m[36mMicropost Create (7.2ms)[0m  [1m[32mINSERT INTO "microposts" ("content", "user_id", "created_at", "updated_at", "status", "guest_email") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["content", "<p>test</p>"], ["user_id", 1], ["created_at", "2025-02-17 09:31:21.290050"], ["updated_at", "2025-02-17 09:31:21.290050"], ["status", 1], ["guest_email", "wadakazumaa@gmail.com"]]
+  ↳ app/controllers/microposts_controller.rb:95:in `zen_create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/microposts_controller.rb:95:in `zen_create'
+Completed 500 Internal Server Error in 1295ms (ActiveRecord: 10.0ms | Allocations: 9166)
+
+
+  
+RestClient::BadRequest (400 Bad Request):
+  
+app/services/mailgun_service.rb:12:in `send_simple_message'
+app/controllers/microposts_controller.rb:96:in `zen_create'
+Started GET "/test_user/zen" for 172.18.0.1 at 2025-02-17 09:32:50 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_new as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:74:in `zen_new'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/zen_new.html.erb within layouts/application
+  Rendered microposts/zen_new.html.erb within layouts/application (Duration: 5.5ms | Allocations: 1828)
+Importmap skipped missing path: controllers/example_controller.js
+  Rendered layouts/_flash_message.html.erb (Duration: 0.7ms | Allocations: 259)
+  Rendered layout layouts/application.html.erb (Duration: 25.6ms | Allocations: 16538)
+Completed 200 OK in 53ms (Views: 27.0ms | ActiveRecord: 10.9ms | Allocations: 26104)
+
+
+Started POST "/test_user/zen_create" for 172.18.0.1 at 2025-02-17 09:32:55 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "micropost"=>{"guest_email"=>"wadakazumaa@gmail.com", "content"=>"<p>hey</p>"}, "commit"=>"✅投稿", "slug"=>"test_user"}
+🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️Params: #<ActionController::Parameters {"authenticity_token"=>"J6e72xlNMccS2xOlxQFOsl2cdqw7tY0JidoeCBc063S4-bvbnt3uGkeDoS3mMGIEdYDH0iSufGmd7ahu4-2GYw", "micropost"=>{"guest_email"=>"wadakazumaa@gmail.com", "content"=>"<p>hey</p>"}, "commit"=>"✅投稿", "controller"=>"microposts", "action"=>"zen_create", "slug"=>"test_user"} permitted: false>
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:84:in `zen_create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/microposts_controller.rb:95:in `zen_create'
+  [1m[36mMicropost Create (1.1ms)[0m  [1m[32mINSERT INTO "microposts" ("content", "user_id", "created_at", "updated_at", "status", "guest_email") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["content", "<p>hey</p>"], ["user_id", 1], ["created_at", "2025-02-17 09:32:55.938926"], ["updated_at", "2025-02-17 09:32:55.938926"], ["status", 1], ["guest_email", "wadakazumaa@gmail.com"]]
+  ↳ app/controllers/microposts_controller.rb:95:in `zen_create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/microposts_controller.rb:95:in `zen_create'
+Redirected to http://localhost:3001/test_user
+Completed 302 Found in 666ms (ActiveRecord: 8.1ms | Allocations: 17554)
+
+
+Started GET "/test_user" for 172.18.0.1 at 2025-02-17 09:32:56 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:45:in `show'
+  [1m[36mMicropost Count (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2[0m  [["user_id", 1], ["status", 1]]
+  ↳ app/controllers/users_controller.rb:47:in `show'
+  [1m[36mMicropost Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2[0m  [["user_id", 1], ["status", 0]]
+  ↳ app/controllers/users_controller.rb:48:in `show'
+  [1m[36mMicropost Load (0.6ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2 ORDER BY "microposts"."created_at" DESC[0m  [["user_id", 1], ["status", 1]]
+  ↳ app/controllers/users_controller.rb:49:in `show'
+  [1m[36mCACHE Micropost Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2[0m  [["user_id", 1], ["status", 0]]
+  ↳ app/controllers/users_controller.rb:50:in `show'
+  [1m[36mMicropost Pluck (0.1ms)[0m  [1m[34mSELECT "microposts"."created_at" FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2 ORDER BY "microposts"."created_at" DESC[0m  [["user_id", 1], ["status", 1]]
+  ↳ app/controllers/users_controller.rb:64:in `show'
+👷👷👷👷👷@posted_dates: [17, 17, 17]
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mMicropost Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "microposts" WHERE "microposts"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:35
+  [1m[36mCACHE Micropost Load (0.0ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2 ORDER BY "microposts"."created_at" DESC[0m  [["user_id", 1], ["status", 1]]
+  ↳ app/views/microposts/_micropost.html.erb:24
+  Rendered microposts/_micropost.html.erb (Duration: 8.2ms | Allocations: 2964)
+  Rendered users/show.html.erb within layouts/application (Duration: 27.8ms | Allocations: 4939)
+Importmap skipped missing path: controllers/example_controller.js
+  Rendered layouts/_flash_message.html.erb (Duration: 0.0ms | Allocations: 24)
+  Rendered layout layouts/application.html.erb (Duration: 52.3ms | Allocations: 18899)
+Completed 200 OK in 71ms (Views: 54.8ms | ActiveRecord: 3.1ms | Allocations: 23943)
+
+
+Started GET "/test_user/zen" for 172.18.0.1 at 2025-02-17 09:33:31 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_new as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:74:in `zen_new'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/zen_new.html.erb within layouts/application
+  Rendered microposts/zen_new.html.erb within layouts/application (Duration: 4.8ms | Allocations: 794)
+  Rendered layouts/_flash_message.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 25.2ms | Allocations: 2997)
+Completed 200 OK in 41ms (Views: 26.8ms | ActiveRecord: 2.0ms | Allocations: 4484)
+
+
+Started POST "/test_user/zen_create" for 172.18.0.1 at 2025-02-17 09:33:36 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "micropost"=>{"guest_email"=>"", "content"=>"<p>hey</p>"}, "commit"=>"✅投稿", "slug"=>"test_user"}
+🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️Params: #<ActionController::Parameters {"authenticity_token"=>"JP-gdCY_NwdRKbtSfvuDCBPXE93YleE8CCyq71CBXfK7oaB0oa_o2gRxCdpdyq--O8uio8eOEFwcGxyJpFgw5Q", "micropost"=>{"guest_email"=>"", "content"=>"<p>hey</p>"}, "commit"=>"✅投稿", "controller"=>"microposts", "action"=>"zen_create", "slug"=>"test_user"} permitted: false>
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:84:in `zen_create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/microposts_controller.rb:95:in `zen_create'
+  [1m[36mMicropost Create (1.7ms)[0m  [1m[32mINSERT INTO "microposts" ("content", "user_id", "created_at", "updated_at", "status", "guest_email") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["content", "<p>hey</p>"], ["user_id", 1], ["created_at", "2025-02-17 09:33:36.654400"], ["updated_at", "2025-02-17 09:33:36.654400"], ["status", 1], ["guest_email", ""]]
+  ↳ app/controllers/microposts_controller.rb:95:in `zen_create'
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/microposts_controller.rb:95:in `zen_create'
+Completed 500 Internal Server Error in 595ms (ActiveRecord: 4.2ms | Allocations: 4966)
+
+
+  
+RestClient::BadRequest (400 Bad Request):
+  
+app/services/mailgun_service.rb:12:in `send_simple_message'
+app/controllers/microposts_controller.rb:96:in `zen_create'
+Started POST "/test_user/zen_create" for 172.18.0.1 at 2025-02-17 09:33:46 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "micropost"=>{"guest_email"=>"wadakazumaa@gmail.com", "content"=>"<p>hey</p>"}, "commit"=>"✅投稿", "slug"=>"test_user"}
+🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️Params: #<ActionController::Parameters {"authenticity_token"=>"JP-gdCY_NwdRKbtSfvuDCBPXE93YleE8CCyq71CBXfK7oaB0oa_o2gRxCdpdyq--O8uio8eOEFwcGxyJpFgw5Q", "micropost"=>{"guest_email"=>"wadakazumaa@gmail.com", "content"=>"<p>hey</p>"}, "commit"=>"✅投稿", "controller"=>"microposts", "action"=>"zen_create", "slug"=>"test_user"} permitted: false>
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:84:in `zen_create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/microposts_controller.rb:95:in `zen_create'
+  [1m[36mMicropost Create (1.7ms)[0m  [1m[32mINSERT INTO "microposts" ("content", "user_id", "created_at", "updated_at", "status", "guest_email") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["content", "<p>hey</p>"], ["user_id", 1], ["created_at", "2025-02-17 09:33:46.997762"], ["updated_at", "2025-02-17 09:33:46.997762"], ["status", 1], ["guest_email", "wadakazumaa@gmail.com"]]
+  ↳ app/controllers/microposts_controller.rb:95:in `zen_create'
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/microposts_controller.rb:95:in `zen_create'
+Redirected to http://localhost:3001/test_user
+Completed 302 Found in 699ms (ActiveRecord: 5.9ms | Allocations: 8034)
+
+
+Started GET "/test_user" for 172.18.0.1 at 2025-02-17 09:33:47 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:45:in `show'
+  [1m[36mMicropost Count (7.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2[0m  [["user_id", 1], ["status", 1]]
+  ↳ app/controllers/users_controller.rb:47:in `show'
+  [1m[36mMicropost Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2[0m  [["user_id", 1], ["status", 0]]
+  ↳ app/controllers/users_controller.rb:48:in `show'
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2 ORDER BY "microposts"."created_at" DESC[0m  [["user_id", 1], ["status", 1]]
+  ↳ app/controllers/users_controller.rb:49:in `show'
+  [1m[36mCACHE Micropost Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2[0m  [["user_id", 1], ["status", 0]]
+  ↳ app/controllers/users_controller.rb:50:in `show'
+  [1m[36mMicropost Pluck (0.1ms)[0m  [1m[34mSELECT "microposts"."created_at" FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2 ORDER BY "microposts"."created_at" DESC[0m  [["user_id", 1], ["status", 1]]
+  ↳ app/controllers/users_controller.rb:64:in `show'
+👷👷👷👷👷@posted_dates: [17, 17, 17, 17, 17]
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mMicropost Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "microposts" WHERE "microposts"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:35
+  [1m[36mCACHE Micropost Load (0.0ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2 ORDER BY "microposts"."created_at" DESC[0m  [["user_id", 1], ["status", 1]]
+  ↳ app/views/microposts/_micropost.html.erb:24
+  Rendered microposts/_micropost.html.erb (Duration: 8.6ms | Allocations: 3839)
+  Rendered users/show.html.erb within layouts/application (Duration: 14.0ms | Allocations: 5809)
+  Rendered layouts/_flash_message.html.erb (Duration: 0.1ms | Allocations: 26)
+  Rendered layout layouts/application.html.erb (Duration: 21.7ms | Allocations: 8092)
+Completed 200 OK in 58ms (Views: 24.2ms | ActiveRecord: 8.5ms | Allocations: 13200)
+
+
+Started GET "/test_user/zen" for 172.18.0.1 at 2025-02-17 09:35:00 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_new as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:74:in `zen_new'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/zen_new.html.erb within layouts/application
+  Rendered microposts/zen_new.html.erb within layouts/application (Duration: 6.5ms | Allocations: 927)
+Importmap skipped missing path: controllers/example_controller.js
+  Rendered layouts/_flash_message.html.erb (Duration: 0.1ms | Allocations: 23)
+  Rendered layout layouts/application.html.erb (Duration: 23.7ms | Allocations: 14835)
+Completed 200 OK in 49ms (Views: 25.4ms | ActiveRecord: 7.1ms | Allocations: 24168)
+
+
+Started POST "/test_user/zen_create" for 172.18.0.1 at 2025-02-17 09:35:07 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "micropost"=>{"guest_email"=>"wadakazumaa@gmail.com", "content"=>"<p>hey</p>"}, "commit"=>"✅投稿", "slug"=>"test_user"}
+🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️Params: #<ActionController::Parameters {"authenticity_token"=>"PPQ0OuT4A-zjNe2t2Dzw5PTFKWl1VnL0mSRoZ5QKFh2jqjQ6Y2jcMbZtXyX7DdxS3NmYF2pNg5SNE94BYNN7Cg", "micropost"=>{"guest_email"=>"wadakazumaa@gmail.com", "content"=>"<p>hey</p>"}, "commit"=>"✅投稿", "controller"=>"microposts", "action"=>"zen_create", "slug"=>"test_user"} permitted: false>
+  [1m[36mUser Load (6.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:84:in `zen_create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/microposts_controller.rb:95:in `zen_create'
+  [1m[36mMicropost Create (1.1ms)[0m  [1m[32mINSERT INTO "microposts" ("content", "user_id", "created_at", "updated_at", "status", "guest_email") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["content", "<p>hey</p>"], ["user_id", 1], ["created_at", "2025-02-17 09:35:07.192693"], ["updated_at", "2025-02-17 09:35:07.192693"], ["status", 1], ["guest_email", "wadakazumaa@gmail.com"]]
+  ↳ app/controllers/microposts_controller.rb:95:in `zen_create'
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/microposts_controller.rb:95:in `zen_create'
+Redirected to http://localhost:3001/test_user
+Completed 302 Found in 690ms (ActiveRecord: 9.1ms | Allocations: 6198)
+
+
+Started GET "/test_user" for 172.18.0.1 at 2025-02-17 09:35:07 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:45:in `show'
+  [1m[36mMicropost Count (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2[0m  [["user_id", 1], ["status", 1]]
+  ↳ app/controllers/users_controller.rb:47:in `show'
+  [1m[36mMicropost Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2[0m  [["user_id", 1], ["status", 0]]
+  ↳ app/controllers/users_controller.rb:48:in `show'
+  [1m[36mMicropost Load (0.3ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2 ORDER BY "microposts"."created_at" DESC[0m  [["user_id", 1], ["status", 1]]
+  ↳ app/controllers/users_controller.rb:49:in `show'
+  [1m[36mCACHE Micropost Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2[0m  [["user_id", 1], ["status", 0]]
+  ↳ app/controllers/users_controller.rb:50:in `show'
+  [1m[36mMicropost Pluck (0.1ms)[0m  [1m[34mSELECT "microposts"."created_at" FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2 ORDER BY "microposts"."created_at" DESC[0m  [["user_id", 1], ["status", 1]]
+  ↳ app/controllers/users_controller.rb:64:in `show'
+👷👷👷👷👷@posted_dates: [17, 17, 17, 17, 17, 17]
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mMicropost Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "microposts" WHERE "microposts"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:35
+  [1m[36mCACHE Micropost Load (0.0ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2 ORDER BY "microposts"."created_at" DESC[0m  [["user_id", 1], ["status", 1]]
+  ↳ app/views/microposts/_micropost.html.erb:24
+  Rendered microposts/_micropost.html.erb (Duration: 5.9ms | Allocations: 3959)
+  Rendered users/show.html.erb within layouts/application (Duration: 9.7ms | Allocations: 5512)
+  Rendered layouts/_flash_message.html.erb (Duration: 0.1ms | Allocations: 24)
+  Rendered layout layouts/application.html.erb (Duration: 15.6ms | Allocations: 7794)
+Completed 200 OK in 29ms (Views: 17.1ms | ActiveRecord: 1.6ms | Allocations: 12583)
+
+
+Started GET "/test_user/drafts/index" for 172.18.0.1 at 2025-02-17 09:36:20 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by DraftsController#index as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/drafts_controller.rb:6:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering drafts/index.html.erb within layouts/application
+  [1m[36mMicropost Load (0.6ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2 AND "microposts"."status" = $3 ORDER BY "microposts"."created_at" DESC[0m  [["user_id", 1], ["status", 0], ["status", 0]]
+  ↳ app/views/drafts/index.html.erb:3
+  Rendered drafts/index.html.erb within layouts/application (Duration: 8.4ms | Allocations: 1803)
+Importmap skipped missing path: controllers/example_controller.js
+  Rendered layouts/_flash_message.html.erb (Duration: 0.1ms | Allocations: 23)
+  Rendered layout layouts/application.html.erb (Duration: 43.9ms | Allocations: 15419)
+Completed 200 OK in 85ms (Views: 45.0ms | ActiveRecord: 6.4ms | Allocations: 24058)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-17 09:55:40 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 16.5ms | Allocations: 1679)
+Completed 200 OK in 176ms (Views: 20.6ms | ActiveRecord: 28.9ms | Allocations: 8251)
+
+
+Started GET "/" for 172.18.0.1 at 2025-02-17 09:58:34 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 21.4ms | Allocations: 1950)
+Completed 200 OK in 131ms (Views: 25.8ms | ActiveRecord: 6.3ms | Allocations: 6833)
+
+
+Started POST "/guest_login" for 172.18.0.1 at 2025-02-17 09:58:36 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#guest as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:54:in `guest'
+Redirected to http://localhost:3001/test_user/zen
+Completed 302 Found in 20ms (ActiveRecord: 0.8ms | Allocations: 1317)
+
+
+Started GET "/test_user/zen" for 172.18.0.1 at 2025-02-17 09:58:37 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_new as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:74:in `zen_new'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/zen_new.html.erb within layouts/application
+  Rendered microposts/zen_new.html.erb within layouts/application (Duration: 8.1ms | Allocations: 1368)
+  Rendered layout layouts/application.html.erb (Duration: 8.5ms | Allocations: 1458)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.2ms | Allocations: 3286)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div id="post" class="mt-5 m-2" data-controller="quill"> 
+  <%= form_with(model: @micropost, url: zen_create_path(slug: @user.slug), method: :post, local: true, data: { turbo: false } ) do |f| %>
+   <p class="bg-yellow-100 text-yellow-800 p-4 rounded-lg text-sm max-w-prose">
+    ⚠️ べータ版: 最大1000文字までです。1枚の写真を入れると1000文字分を超過してしまいます。調節中です🙇‍♂️
+   </p>
+
+   <p class="mt-3">
+   <%= f.label :guest_email, "送信先のメールアドレス:", class: "block text-sm font-medium text-gray-700" %>
+   <%= f.text_field :guest_email, class: "form-input mt-2 block w-80 border-2 border-blue-500" %>
+   </p>
+
+    <!-- Quill editor container -->
+    <div data-quill-target="editor" class="min-h-[500px] h-auto"></div>
+
+    <!-- Hidden input to store Quill content -->
+    <%= f.hidden_field :content, data: { quill_target: "input" } %>
+    
+  
+    
+
+    <!-- Actions -->
+  <div class="actions text-right mt-2">
+  <% unless current_page?(camera_path) %>
+    <button class="hover:bg-yellow-500 px-4 py-2 bg-gray-100 border border-gray-300 text-gray-700 
+                 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 
+                 focus:ring-gray-300 rounded-md <%= 'disable' if @user.name == 'test_user' %>"">
+      <%= link_to "📸 手書きを読み取る", camera_path(@user), class: "submit-button text-dark text-decoration-none" %>
+    </button>
+  <% end %>
+
+  <%= f.submit "📝 下書き保存",  
+      id: "draft_submit_button", 
+      name: "draft", 
+      class: "hover:bg-yellow-500 px-4 py-2 bg-gray-200 border border-gray-300 text-gray-800 
+             hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 
+             focus:ring-gray-400 rounded-md disabled:opacity-50 disabled:cursor-not-allowed"" %>
+
+  <%= f.submit "✅投稿", 
+      id: "submit_button", 
+      class: "hover:bg-yellow-500 px-4 py-2 bg-gray-200 border border-gray-300 text-gray-800 
+             hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 
+             focus:ring-gray-400 rounded-md" %>
+    </div>
+  <% end %>
+
+
+</div>
+
+
+<!-- Add Quill CSS and JS -->
+<link href="https://cdn.jsdelivr.net/npm/quill@1.3.7/dist/quill.snow.css" rel="stylesheet">
+<script src="https://cdn.quilljs.com/2.0.3/quill.js"></script>    
+):
+1:    <div id="post" class="mt-5 m-2" data-controller="quill"> 
+2:      <%= form_with(model: @micropost, url: zen_create_path(slug: @user.slug), method: :post, local: true, data: { turbo: false } ) do |f| %>
+3:       <p class="bg-yellow-100 text-yellow-800 p-4 rounded-lg text-sm max-w-prose">
+4:        ⚠️ べータ版: 最大1000文字までです。1枚の写真を入れると1000文字分を超過してしまいます。調節中です🙇‍♂️
+5:       </p>
+6:    
+7:       <p class="mt-3">
+8:       <%= f.label :guest_email, "送信先のメールアドレス:", class: "block text-sm font-medium text-gray-700" %>
+9:       <%= f.text_field :guest_email, class: "form-input mt-2 block w-80 border-2 border-blue-500" %>
+10:       </p>
+11:    
+12:        <!-- Quill editor container -->
+13:        <div data-quill-target="editor" class="min-h-[500px] h-auto"></div>
+14:    
+15:        <!-- Hidden input to store Quill content -->
+16:        <%= f.hidden_field :content, data: { quill_target: "input" } %>
+17:        
+18:      
+19:        
+20:    
+21:        <!-- Actions -->
+22:      <div class="actions text-right mt-2">
+23:      <% unless current_page?(camera_path) %>
+24:        <button class="hover:bg-yellow-500 px-4 py-2 bg-gray-100 border border-gray-300 text-gray-700 
+25:                     hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 
+26:                     focus:ring-gray-300 rounded-md <%= 'disable' if @user.name == 'test_user' %>"">
+27:          <%= link_to "📸 手書きを読み取る", camera_path(@user), class: "submit-button text-dark text-decoration-none" %>
+28:        </button>
+29:      <% end %>
+30:    
+31:      <%= f.submit "📝 下書き保存",  
+32:          id: "draft_submit_button", 
+33:          name: "draft", 
+34:          class: "hover:bg-yellow-500 px-4 py-2 bg-gray-200 border border-gray-300 text-gray-800 
+35:                 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 
+36:                 focus:ring-gray-400 rounded-md disabled:opacity-50 disabled:cursor-not-allowed"" %>
+37:    
+38:      <%= f.submit "✅投稿", 
+39:          id: "submit_button", 
+40:          class: "hover:bg-yellow-500 px-4 py-2 bg-gray-200 border border-gray-300 text-gray-800 
+41:                 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 
+42:                 focus:ring-gray-400 rounded-md" %>
+43:        </div>
+44:      <% end %>
+45:    
+46:    
+47:    </div>
+48:    
+49:    
+50:    <!-- Add Quill CSS and JS -->
+51:    <link href="https://cdn.jsdelivr.net/npm/quill@1.3.7/dist/quill.snow.css" rel="stylesheet">
+52:    <script src="https://cdn.quilljs.com/2.0.3/quill.js"></script>    
+  
+app/views/microposts/zen_new.html.erb:38: syntax error, unexpected local variable or method, expecting ')'
+app/views/microposts/zen_new.html.erb:41: syntax error, unexpected local variable or method, expecting ')'
+app/views/microposts/zen_new.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/microposts/zen_new.html.erb:51: unknown regexp options - cd
+app/views/microposts/zen_new.html.erb:51: `@1' is not allowed as an instance variable name
+app/views/microposts/zen_new.html.erb:51: unexpected fraction part after numeric literal
+app/views/microposts/zen_new.html.erb:52: unknown regexp options - cd
+app/views/microposts/zen_new.html.erb:52: unexpected fraction part after numeric literal
+app/views/microposts/zen_new.html.erb:54: unterminated string meets end of file
+app/views/microposts/zen_new.html.erb:38: syntax error, unexpected local variable or method, expecting ')'
+app/views/microposts/zen_new.html.erb:41: syntax error, unexpected local variable or method, expecting ')'
+app/views/microposts/zen_new.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/microposts/zen_new.html.erb:51: unknown regexp options - cd
+app/views/microposts/zen_new.html.erb:51: `@1' is not allowed as an instance variable name
+app/views/microposts/zen_new.html.erb:51: unexpected fraction part after numeric literal
+app/views/microposts/zen_new.html.erb:52: unknown regexp options - cd
+app/views/microposts/zen_new.html.erb:52: unexpected fraction part after numeric literal
+app/views/microposts/zen_new.html.erb:54: unterminated string meets end of file
+app/views/microposts/zen_new.html.erb:38: syntax error, unexpected local variable or method, expecting ')'
+app/views/microposts/zen_new.html.erb:41: syntax error, unexpected local variable or method, expecting ')'
+app/views/microposts/zen_new.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/microposts/zen_new.html.erb:51: unknown regexp options - cd
+app/views/microposts/zen_new.html.erb:51: `@1' is not allowed as an instance variable name
+app/views/microposts/zen_new.html.erb:51: unexpected fraction part after numeric literal
+app/views/microposts/zen_new.html.erb:52: unknown regexp options - cd
+app/views/microposts/zen_new.html.erb:52: unexpected fraction part after numeric literal
+app/views/microposts/zen_new.html.erb:54: unterminated string meets end of file
+app/views/microposts/zen_new.html.erb:38: syntax error, unexpected local variable or method, expecting ')'
+app/views/microposts/zen_new.html.erb:41: syntax error, unexpected local variable or method, expecting ')'
+app/views/microposts/zen_new.html.erb:42: syntax error, unexpected local variable or method, expecting ')'
+app/views/microposts/zen_new.html.erb:51: unknown regexp options - cd
+app/views/microposts/zen_new.html.erb:51: `@1' is not allowed as an instance variable name
+app/views/microposts/zen_new.html.erb:51: unexpected fraction part after numeric literal
+app/views/microposts/zen_new.html.erb:52: unknown regexp options - cd
+app/views/microposts/zen_new.html.erb:52: unexpected fraction part after numeric literal
+app/views/microposts/zen_new.html.erb:54: unterminated string meets end of file
+Started GET "/test_user/zen" for 172.18.0.1 at 2025-02-17 09:59:20 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_new as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:74:in `zen_new'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/zen_new.html.erb within layouts/application
+  Rendered microposts/zen_new.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1216)
+  Rendered layouts/_flash_message.html.erb (Duration: 1.3ms | Allocations: 235)
+  Rendered layout layouts/application.html.erb (Duration: 39.5ms | Allocations: 4186)
+Completed 200 OK in 58ms (Views: 42.3ms | ActiveRecord: 1.2ms | Allocations: 6222)
+
+
+Started POST "/test_user/zen_create" for 172.18.0.1 at 2025-02-17 09:59:23 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "micropost"=>{"guest_email"=>"", "content"=>""}, "commit"=>"✅投稿", "slug"=>"test_user"}
+🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️Params: #<ActionController::Parameters {"authenticity_token"=>"OpzUu1HMcGK3Hilr3pY7hOoma6njXTRXgowVZq-XL-ylwtS71lyvv-JGm-P9pxcywjra1_xGxTeWu6MAW05C-w", "micropost"=>{"guest_email"=>"", "content"=>""}, "commit"=>"✅投稿", "controller"=>"microposts", "action"=>"zen_create", "slug"=>"test_user"} permitted: false>
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:84:in `zen_create'
+Redirected to http://localhost:3001/test_user
+Completed 302 Found in 22ms (ActiveRecord: 0.2ms | Allocations: 2805)
+
+
+Started GET "/test_user" for 172.18.0.1 at 2025-02-17 09:59:23 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:45:in `show'
+  [1m[36mMicropost Count (4.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2[0m  [["user_id", 1], ["status", 1]]
+  ↳ app/controllers/users_controller.rb:47:in `show'
+  [1m[36mMicropost Count (0.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2[0m  [["user_id", 1], ["status", 0]]
+  ↳ app/controllers/users_controller.rb:48:in `show'
+  [1m[36mMicropost Load (0.9ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2 ORDER BY "microposts"."created_at" DESC[0m  [["user_id", 1], ["status", 1]]
+  ↳ app/controllers/users_controller.rb:49:in `show'
+  [1m[36mCACHE Micropost Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2[0m  [["user_id", 1], ["status", 0]]
+  ↳ app/controllers/users_controller.rb:50:in `show'
+  [1m[36mMicropost Pluck (0.1ms)[0m  [1m[34mSELECT "microposts"."created_at" FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2 ORDER BY "microposts"."created_at" DESC[0m  [["user_id", 1], ["status", 1]]
+  ↳ app/controllers/users_controller.rb:64:in `show'
+👷👷👷👷👷@posted_dates: [17, 17, 17, 17, 17, 17]
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mMicropost Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "microposts" WHERE "microposts"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:35
+  [1m[36mCACHE Micropost Load (0.0ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2 ORDER BY "microposts"."created_at" DESC[0m  [["user_id", 1], ["status", 1]]
+  ↳ app/views/microposts/_micropost.html.erb:24
+  Rendered microposts/_micropost.html.erb (Duration: 5.8ms | Allocations: 4298)
+  Rendered users/show.html.erb within layouts/application (Duration: 11.2ms | Allocations: 6152)
+  Rendered layouts/_flash_message.html.erb (Duration: 0.1ms | Allocations: 23)
+  Rendered layout layouts/application.html.erb (Duration: 20.2ms | Allocations: 8457)
+Completed 200 OK in 39ms (Views: 21.1ms | ActiveRecord: 6.1ms | Allocations: 13172)
+
+
+Started POST "/test_user/zen_create" for 172.18.0.1 at 2025-02-17 09:59:32 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "micropost"=>{"guest_email"=>"", "content"=>""}, "draft"=>"📝 下書き保存", "slug"=>"test_user"}
+🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️Params: #<ActionController::Parameters {"authenticity_token"=>"OpzUu1HMcGK3Hilr3pY7hOoma6njXTRXgowVZq-XL-ylwtS71lyvv-JGm-P9pxcywjra1_xGxTeWu6MAW05C-w", "micropost"=>{"guest_email"=>"", "content"=>""}, "draft"=>"📝 下書き保存", "controller"=>"microposts", "action"=>"zen_create", "slug"=>"test_user"} permitted: false>
+  [1m[36mUser Load (11.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:84:in `zen_create'
+Redirected to http://localhost:3001/test_user
+Completed 302 Found in 40ms (ActiveRecord: 11.1ms | Allocations: 2554)
+
+
+Started GET "/test_user" for 172.18.0.1 at 2025-02-17 09:59:33 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:45:in `show'
+  [1m[36mMicropost Count (0.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2[0m  [["user_id", 1], ["status", 1]]
+  ↳ app/controllers/users_controller.rb:47:in `show'
+  [1m[36mMicropost Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2[0m  [["user_id", 1], ["status", 0]]
+  ↳ app/controllers/users_controller.rb:48:in `show'
+  [1m[36mMicropost Load (0.8ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2 ORDER BY "microposts"."created_at" DESC[0m  [["user_id", 1], ["status", 1]]
+  ↳ app/controllers/users_controller.rb:49:in `show'
+  [1m[36mCACHE Micropost Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2[0m  [["user_id", 1], ["status", 0]]
+  ↳ app/controllers/users_controller.rb:50:in `show'
+  [1m[36mMicropost Pluck (0.1ms)[0m  [1m[34mSELECT "microposts"."created_at" FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2 ORDER BY "microposts"."created_at" DESC[0m  [["user_id", 1], ["status", 1]]
+  ↳ app/controllers/users_controller.rb:64:in `show'
+👷👷👷👷👷@posted_dates: [17, 17, 17, 17, 17, 17]
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mMicropost Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "microposts" WHERE "microposts"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:35
+  [1m[36mCACHE Micropost Load (0.0ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2 ORDER BY "microposts"."created_at" DESC[0m  [["user_id", 1], ["status", 1]]
+  ↳ app/views/microposts/_micropost.html.erb:24
+  Rendered microposts/_micropost.html.erb (Duration: 4.1ms | Allocations: 3917)
+  Rendered users/show.html.erb within layouts/application (Duration: 6.6ms | Allocations: 5386)
+  Rendered layouts/_flash_message.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 7592)
+Completed 200 OK in 28ms (Views: 12.1ms | ActiveRecord: 2.1ms | Allocations: 11949)
+
+
+Started GET "/test_user/zen" for 172.18.0.1 at 2025-02-17 09:59:35 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_new as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:74:in `zen_new'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/zen_new.html.erb within layouts/application
+  Rendered microposts/zen_new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1275)
+  Rendered layouts/_flash_message.html.erb (Duration: 1.4ms | Allocations: 233)
+  Rendered layout layouts/application.html.erb (Duration: 12.1ms | Allocations: 4232)
+Completed 200 OK in 157ms (Views: 13.5ms | ActiveRecord: 1.0ms | Allocations: 6413)
+
+
+Started GET "/test_user/zen" for 172.18.0.1 at 2025-02-17 09:59:52 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_new as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:74:in `zen_new'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/zen_new.html.erb within layouts/application
+  Rendered microposts/zen_new.html.erb within layouts/application (Duration: 4.3ms | Allocations: 1212)
+  Rendered layouts/_flash_message.html.erb (Duration: 3.7ms | Allocations: 232)
+  Rendered layout layouts/application.html.erb (Duration: 52.0ms | Allocations: 4151)
+Completed 200 OK in 108ms (Views: 66.2ms | ActiveRecord: 3.1ms | Allocations: 6180)
+
+
+Started GET "/test_user/zen" for 172.18.0.1 at 2025-02-17 10:00:35 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_new as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:74:in `zen_new'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/zen_new.html.erb within layouts/application
+  Rendered microposts/zen_new.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1332)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 1421)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 1.0ms | Allocations: 3436)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div id="post" class="mt-5 m-2" data-controller="quill"> 
+  <%= form_with(model: @micropost, url: zen_create_path(slug: @user.slug), method: :post, local: true, data: { turbo: false } ) do |f| %>
+   <p class="bg-yellow-100 text-yellow-800 p-4 rounded-lg text-sm max-w-prose">
+    ⚠️ べータ版: 最大1000文字までです。1枚の写真を入れると1000文字分を超過してしまいます。調節中です🙇‍♂️
+   </p>
+
+   <p class="mt-3">
+   <%= f.label :guest_email, "送信先のメールアドレス:", class: "block text-sm font-medium text-gray-700" %>
+   <%= f.text_field :guest_email, class: "form-input mt-2 block w-80 border-2 border-blue-500" %>
+   </p>
+
+    <!-- Quill editor container -->
+    <div data-quill-target="editor" class="min-h-[500px] h-auto"></div>
+
+    <!-- Hidden input to store Quill content -->
+    <%= f.hidden_field :content, data: { quill_target: "input" } %>
+    
+  
+    
+
+    <!-- Actions -->
+  <div class="actions text-right mt-2">
+  <% unless current_page?(camera_path) %>
+    <button class="hover:bg-yellow-500 px-4 py-2 bg-gray-100 border border-gray-300 text-gray-700 
+                 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 
+                 focus:ring-gray-300 rounded-md <%= 'disable' if @user.name == 'test_user' %>"">
+      <%= link_to "📸 手書きを読み取る", camera_path(@user), class: "submit-button text-dark text-decoration-none" %>
+    </button>
+  <% end %>
+
+  <%= f.submit "📝 下書き保存",  
+      id: "draft_submit_button", 
+      name: "draft", 
+      disabled,
+      class: "hover:bg-yellow-500 px-4 py-2 bg-gray-200 border border-gray-300 text-gray-800 
+             hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 
+             focus:ring-gray-400 rounded-md disabled" %>
+
+  <%= f.submit "✅投稿", 
+      id: "submit_button", 
+      class: "hover:bg-yellow-500 px-4 py-2 bg-gray-200 border border-gray-300 text-gray-800 
+             hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 
+             focus:ring-gray-400 rounded-md" %>
+    </div>
+  <% end %>
+
+
+</div>
+
+
+<!-- Add Quill CSS and JS -->
+<link href="https://cdn.jsdelivr.net/npm/quill@1.3.7/dist/quill.snow.css" rel="stylesheet">
+<script src="https://cdn.quilljs.com/2.0.3/quill.js"></script>    
+):
+1:    <div id="post" class="mt-5 m-2" data-controller="quill"> 
+2:      <%= form_with(model: @micropost, url: zen_create_path(slug: @user.slug), method: :post, local: true, data: { turbo: false } ) do |f| %>
+3:       <p class="bg-yellow-100 text-yellow-800 p-4 rounded-lg text-sm max-w-prose">
+4:        ⚠️ べータ版: 最大1000文字までです。1枚の写真を入れると1000文字分を超過してしまいます。調節中です🙇‍♂️
+5:       </p>
+6:    
+7:       <p class="mt-3">
+8:       <%= f.label :guest_email, "送信先のメールアドレス:", class: "block text-sm font-medium text-gray-700" %>
+9:       <%= f.text_field :guest_email, class: "form-input mt-2 block w-80 border-2 border-blue-500" %>
+10:       </p>
+11:    
+12:        <!-- Quill editor container -->
+13:        <div data-quill-target="editor" class="min-h-[500px] h-auto"></div>
+14:    
+15:        <!-- Hidden input to store Quill content -->
+16:        <%= f.hidden_field :content, data: { quill_target: "input" } %>
+17:        
+18:      
+19:        
+20:    
+21:        <!-- Actions -->
+22:      <div class="actions text-right mt-2">
+23:      <% unless current_page?(camera_path) %>
+24:        <button class="hover:bg-yellow-500 px-4 py-2 bg-gray-100 border border-gray-300 text-gray-700 
+25:                     hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 
+26:                     focus:ring-gray-300 rounded-md <%= 'disable' if @user.name == 'test_user' %>"">
+27:          <%= link_to "📸 手書きを読み取る", camera_path(@user), class: "submit-button text-dark text-decoration-none" %>
+28:        </button>
+29:      <% end %>
+30:    
+31:      <%= f.submit "📝 下書き保存",  
+32:          id: "draft_submit_button", 
+33:          name: "draft", 
+34:          disabled,
+35:          class: "hover:bg-yellow-500 px-4 py-2 bg-gray-200 border border-gray-300 text-gray-800 
+36:                 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 
+37:                 focus:ring-gray-400 rounded-md disabled" %>
+38:    
+39:      <%= f.submit "✅投稿", 
+40:          id: "submit_button", 
+41:          class: "hover:bg-yellow-500 px-4 py-2 bg-gray-200 border border-gray-300 text-gray-800 
+42:                 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 
+43:                 focus:ring-gray-400 rounded-md" %>
+44:        </div>
+45:      <% end %>
+46:    
+47:    
+48:    </div>
+49:    
+50:    
+51:    <!-- Add Quill CSS and JS -->
+52:    <link href="https://cdn.jsdelivr.net/npm/quill@1.3.7/dist/quill.snow.css" rel="stylesheet">
+53:    <script src="https://cdn.quilljs.com/2.0.3/quill.js"></script>    
+  
+app/views/microposts/zen_new.html.erb:34: syntax error, unexpected ',', expecting =>
+app/views/microposts/zen_new.html.erb:34: syntax error, unexpected ',', expecting =>
+app/views/microposts/zen_new.html.erb:34: syntax error, unexpected ',', expecting =>
+app/views/microposts/zen_new.html.erb:34: syntax error, unexpected ',', expecting =>
+Started GET "/test_user/zen" for 172.18.0.1 at 2025-02-17 10:02:06 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_new as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:74:in `zen_new'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/zen_new.html.erb within layouts/application
+  Rendered microposts/zen_new.html.erb within layouts/application (Duration: 13.0ms | Allocations: 1216)
+  Rendered layouts/_flash_message.html.erb (Duration: 1.1ms | Allocations: 232)
+  Rendered layout layouts/application.html.erb (Duration: 24.1ms | Allocations: 4168)
+Completed 200 OK in 49ms (Views: 28.1ms | ActiveRecord: 2.0ms | Allocations: 6205)
+
+
+Started GET "/test_user/zen" for 172.18.0.1 at 2025-02-17 10:02:41 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_new as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:74:in `zen_new'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/zen_new.html.erb within layouts/application
+  Rendered microposts/zen_new.html.erb within layouts/application (Duration: 6.7ms | Allocations: 1220)
+  Rendered layouts/_flash_message.html.erb (Duration: 0.7ms | Allocations: 232)
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 4160)
+Completed 200 OK in 42ms (Views: 20.4ms | ActiveRecord: 1.7ms | Allocations: 6224)
+
+
+Started GET "/test_user/camera" for 172.18.0.1 at 2025-02-17 10:02:43 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#camera as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:38:in `camera'
+  Rendering layout layouts/application.html.erb
+  Rendering users/camera.html.erb within layouts/application
+  Rendered shared/_micropost_form.html.erb (Duration: 8.1ms | Allocations: 1408)
+  Rendered users/camera.html.erb within layouts/application (Duration: 34.5ms | Allocations: 3817)
+  Rendered layouts/_flash_message.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered layout layouts/application.html.erb (Duration: 39.4ms | Allocations: 5885)
+Completed 200 OK in 47ms (Views: 41.3ms | ActiveRecord: 0.8ms | Allocations: 7112)
+
+
+Started GET "/test_user/zen" for 172.18.0.1 at 2025-02-17 10:03:44 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_new as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:74:in `zen_new'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/zen_new.html.erb within layouts/application
+  Rendered microposts/zen_new.html.erb within layouts/application (Duration: 6.7ms | Allocations: 1399)
+  Rendered layouts/_flash_message.html.erb (Duration: 1.1ms | Allocations: 232)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 4366)
+Completed 200 OK in 40ms (Views: 22.2ms | ActiveRecord: 1.3ms | Allocations: 6391)
+
+
+Started GET "/test_user/camera" for 172.18.0.1 at 2025-02-17 10:03:47 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#camera as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:38:in `camera'
+  Rendering layout layouts/application.html.erb
+  Rendering users/camera.html.erb within layouts/application
+  Rendered shared/_micropost_form.html.erb (Duration: 4.7ms | Allocations: 1318)
+  Rendered users/camera.html.erb within layouts/application (Duration: 43.1ms | Allocations: 5829)
+  Rendered layouts/_flash_message.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 48.0ms | Allocations: 7892)
+Completed 200 OK in 55ms (Views: 50.3ms | ActiveRecord: 0.3ms | Allocations: 8978)
+
+
+Started GET "/test_user/camera" for 172.18.0.1 at 2025-02-17 10:03:57 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#camera as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:38:in `camera'
+  Rendering layout layouts/application.html.erb
+  Rendering users/camera.html.erb within layouts/application
+  Rendered shared/_micropost_form.html.erb (Duration: 2.3ms | Allocations: 1213)
+  Rendered users/camera.html.erb within layouts/application (Duration: 15.6ms | Allocations: 3418)
+  Rendered layouts/_flash_message.html.erb (Duration: 1.3ms | Allocations: 230)
+  Rendered layout layouts/application.html.erb (Duration: 44.9ms | Allocations: 6143)
+Completed 200 OK in 62ms (Views: 49.3ms | ActiveRecord: 2.2ms | Allocations: 7477)
+
+
+Started GET "/test_user/zen" for 172.18.0.1 at 2025-02-17 10:04:39 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_new as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:74:in `zen_new'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/zen_new.html.erb within layouts/application
+  Rendered microposts/zen_new.html.erb within layouts/application (Duration: 8.8ms | Allocations: 1248)
+  Rendered layouts/_flash_message.html.erb (Duration: 0.1ms | Allocations: 22)
+  Rendered layout layouts/application.html.erb (Duration: 17.8ms | Allocations: 3525)
+Completed 200 OK in 69ms (Views: 39.1ms | ActiveRecord: 1.6ms | Allocations: 5308)
+
+
+Started GET "/test_user/zen" for 172.18.0.1 at 2025-02-17 10:05:34 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_new as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:74:in `zen_new'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/zen_new.html.erb within layouts/application
+  Rendered microposts/zen_new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1352)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 1441)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 1.2ms | Allocations: 3451)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div id="post" class="mt-5 m-2" data-controller="quill"> 
+  <%= form_with(model: @micropost, url: zen_create_path(slug: @user.slug), method: :post, local: true, data: { turbo: false } ) do |f| %>
+   <p class="bg-yellow-100 text-yellow-800 p-4 rounded-lg text-sm max-w-prose">
+    ⚠️ べータ版: 最大1000文字までです。1枚の写真を入れると1000文字分を超過してしまいます。調節中です🙇‍♂️
+   </p>
+
+   <p class="mt-3">
+   <%= f.label :guest_email, "送信先のメールアドレス:", class: "block text-sm font-medium text-gray-700" %>
+   <%= f.text_field :guest_email, class: "form-input mt-2 block w-80 border-2 border-blue-500" %>
+   </p>
+
+    <!-- Quill editor container -->
+    <div data-quill-target="editor" class="min-h-[500px] h-auto"></div>
+
+    <!-- Hidden input to store Quill content -->
+    <%= f.hidden_field :content, data: { quill_target: "input" } %>
+    
+  
+    
+
+    <!-- Actions -->
+  <div class="actions text-right mt-2">
+
+  <% unless current_page?(camera_path) %>
+  <button 
+    class="hover:bg-yellow-500 px-4 py-2 bg-gray-100 border border-gray-300 text-gray-700 
+           hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 
+           focus:ring-gray-300 rounded-md 
+           <%= 'disabled:opacity-50 disabled:cursor-not-allowed' if @user.name == 'test_user' %>" 
+    <%= 'disabled' if @user.name == 'test_user' %> >
+    <%= link_to "📸 手書きを読み取る", camera_path(@user), class: "submit-button text-dark text-decoration-none" %>
+  </button>
+<% end %>
+
+
+  <%= f.submit "📝 下書き保存",  
+      id: "draft_submit_button", 
+      name: "draft", 
+      disabled: true,
+      class: "hover:bg-yellow-500 px-4 py-2 bg-gray-200 border border-gray-300 text-gray-800 
+             hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 
+             focus:ring-gray-400 rounded-md disabled"  <%= 'disabled:opacity-50 disabled:cursor-not-allowed' %>%>
+
+  <%= f.submit "✅投稿", 
+      id: "submit_button", 
+      disabled: true,
+      class: "hover:bg-yellow-500 px-4 py-2 bg-gray-200 border border-gray-300 text-gray-800 
+             hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 
+             focus:ring-gray-400 rounded-md" %>
+    </div>
+  <% end %>
+
+
+</div>
+
+
+<!-- Add Quill CSS and JS -->
+<link href="https://cdn.jsdelivr.net/npm/quill@1.3.7/dist/quill.snow.css" rel="stylesheet">
+<script src="https://cdn.quilljs.com/2.0.3/quill.js"></script>    
+):
+1:    <div id="post" class="mt-5 m-2" data-controller="quill"> 
+2:      <%= form_with(model: @micropost, url: zen_create_path(slug: @user.slug), method: :post, local: true, data: { turbo: false } ) do |f| %>
+3:       <p class="bg-yellow-100 text-yellow-800 p-4 rounded-lg text-sm max-w-prose">
+4:        ⚠️ べータ版: 最大1000文字までです。1枚の写真を入れると1000文字分を超過してしまいます。調節中です🙇‍♂️
+5:       </p>
+6:    
+7:       <p class="mt-3">
+8:       <%= f.label :guest_email, "送信先のメールアドレス:", class: "block text-sm font-medium text-gray-700" %>
+9:       <%= f.text_field :guest_email, class: "form-input mt-2 block w-80 border-2 border-blue-500" %>
+10:       </p>
+11:    
+12:        <!-- Quill editor container -->
+13:        <div data-quill-target="editor" class="min-h-[500px] h-auto"></div>
+14:    
+15:        <!-- Hidden input to store Quill content -->
+16:        <%= f.hidden_field :content, data: { quill_target: "input" } %>
+17:        
+18:      
+19:        
+20:    
+21:        <!-- Actions -->
+22:      <div class="actions text-right mt-2">
+23:    
+24:      <% unless current_page?(camera_path) %>
+25:      <button 
+26:        class="hover:bg-yellow-500 px-4 py-2 bg-gray-100 border border-gray-300 text-gray-700 
+27:               hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 
+28:               focus:ring-gray-300 rounded-md 
+29:               <%= 'disabled:opacity-50 disabled:cursor-not-allowed' if @user.name == 'test_user' %>" 
+30:        <%= 'disabled' if @user.name == 'test_user' %> >
+31:        <%= link_to "📸 手書きを読み取る", camera_path(@user), class: "submit-button text-dark text-decoration-none" %>
+32:      </button>
+33:    <% end %>
+34:    
+35:    
+36:      <%= f.submit "📝 下書き保存",  
+37:          id: "draft_submit_button", 
+38:          name: "draft", 
+39:          disabled: true,
+40:          class: "hover:bg-yellow-500 px-4 py-2 bg-gray-200 border border-gray-300 text-gray-800 
+41:                 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 
+42:                 focus:ring-gray-400 rounded-md disabled"  <%= 'disabled:opacity-50 disabled:cursor-not-allowed' %>%>
+43:    
+44:      <%= f.submit "✅投稿", 
+45:          id: "submit_button", 
+46:          disabled: true,
+47:          class: "hover:bg-yellow-500 px-4 py-2 bg-gray-200 border border-gray-300 text-gray-800 
+48:                 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 
+49:                 focus:ring-gray-400 rounded-md" %>
+50:        </div>
+51:      <% end %>
+52:    
+53:    
+54:    </div>
+55:    
+56:    
+57:    <!-- Add Quill CSS and JS -->
+58:    <link href="https://cdn.jsdelivr.net/npm/quill@1.3.7/dist/quill.snow.css" rel="stylesheet">
+59:    <script src="https://cdn.quilljs.com/2.0.3/quill.js"></script>    
+  
+app/views/microposts/zen_new.html.erb:51: syntax error, unexpected `end', expecting ')'
+app/views/microposts/zen_new.html.erb:61: syntax error, unexpected `end', expecting ')'
+app/views/microposts/zen_new.html.erb:51: syntax error, unexpected `end', expecting ')'
+app/views/microposts/zen_new.html.erb:61: syntax error, unexpected `end', expecting ')'
+app/views/microposts/zen_new.html.erb:51: syntax error, unexpected `end', expecting ')'
+app/views/microposts/zen_new.html.erb:61: syntax error, unexpected `end', expecting ')'
+app/views/microposts/zen_new.html.erb:51: syntax error, unexpected `end', expecting ')'
+app/views/microposts/zen_new.html.erb:61: syntax error, unexpected `end', expecting ')'
+Started GET "/test_user/zen" for 172.18.0.1 at 2025-02-17 10:05:58 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_new as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:74:in `zen_new'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/zen_new.html.erb within layouts/application
+  Rendered microposts/zen_new.html.erb within layouts/application (Duration: 6.1ms | Allocations: 1243)
+  Rendered layouts/_flash_message.html.erb (Duration: 2.2ms | Allocations: 232)
+  Rendered layout layouts/application.html.erb (Duration: 23.4ms | Allocations: 4182)
+Completed 200 OK in 55ms (Views: 43.1ms | ActiveRecord: 1.1ms | Allocations: 6214)
+
+
+Started GET "/test_user/zen" for 172.18.0.1 at 2025-02-17 10:06:46 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_new as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:74:in `zen_new'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/zen_new.html.erb within layouts/application
+  Rendered microposts/zen_new.html.erb within layouts/application (Duration: 12.1ms | Allocations: 1242)
+  Rendered layouts/_flash_message.html.erb (Duration: 0.7ms | Allocations: 232)
+  Rendered layout layouts/application.html.erb (Duration: 34.3ms | Allocations: 4181)
+Completed 200 OK in 55ms (Views: 37.5ms | ActiveRecord: 1.7ms | Allocations: 6204)
+
+
+Started GET "/test_user/camera" for 172.18.0.1 at 2025-02-17 10:06:50 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#camera as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:38:in `camera'
+  Rendering layout layouts/application.html.erb
+  Rendering users/camera.html.erb within layouts/application
+  Rendered shared/_micropost_form.html.erb (Duration: 3.2ms | Allocations: 1213)
+  Rendered users/camera.html.erb within layouts/application (Duration: 10.1ms | Allocations: 3413)
+  Rendered layouts/_flash_message.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 5476)
+Completed 200 OK in 23ms (Views: 16.1ms | ActiveRecord: 0.3ms | Allocations: 6562)
+
+
+Started GET "/test_user/zen" for 172.18.0.1 at 2025-02-17 10:07:17 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_new as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (4.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:74:in `zen_new'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/zen_new.html.erb within layouts/application
+  Rendered microposts/zen_new.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1222)
+  Rendered layouts/_flash_message.html.erb (Duration: 0.9ms | Allocations: 232)
+  Rendered layout layouts/application.html.erb (Duration: 30.5ms | Allocations: 4162)
+Completed 200 OK in 68ms (Views: 34.5ms | ActiveRecord: 4.9ms | Allocations: 6200)
+
+
+Started GET "/test_user/zen" for 172.18.0.1 at 2025-02-17 10:07:30 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_new as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:74:in `zen_new'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/zen_new.html.erb within layouts/application
+  Rendered microposts/zen_new.html.erb within layouts/application (Duration: 26.0ms | Allocations: 1199)
+  Rendered layouts/_flash_message.html.erb (Duration: 0.7ms | Allocations: 232)
+  Rendered layout layouts/application.html.erb (Duration: 39.3ms | Allocations: 4138)
+Completed 200 OK in 79ms (Views: 42.8ms | ActiveRecord: 1.3ms | Allocations: 6170)
+
+
+Started POST "/test_user/zen_create" for 172.18.0.1 at 2025-02-17 10:07:33 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "micropost"=>{"guest_email"=>"", "content"=>""}, "slug"=>"test_user"}
+🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️🛠️Params: #<ActionController::Parameters {"authenticity_token"=>"Qwcjj8uTEvDKYaTA8mlLhR3ocaDOpbpkfCQ3YxqXO07cWSOPTAPNLZ85FkjRWGczNfTA3tG-SwRoE4EF7k5WWQ", "micropost"=>{"guest_email"=>"", "content"=>""}, "controller"=>"microposts", "action"=>"zen_create", "slug"=>"test_user"} permitted: false>
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:84:in `zen_create'
+Redirected to http://localhost:3001/test_user
+Completed 302 Found in 97ms (ActiveRecord: 0.3ms | Allocations: 2972)
+
+
+Started GET "/test_user" for 172.18.0.1 at 2025-02-17 10:07:33 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:45:in `show'
+  [1m[36mMicropost Count (3.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2[0m  [["user_id", 1], ["status", 1]]
+  ↳ app/controllers/users_controller.rb:47:in `show'
+  [1m[36mMicropost Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2[0m  [["user_id", 1], ["status", 0]]
+  ↳ app/controllers/users_controller.rb:48:in `show'
+  [1m[36mMicropost Load (0.4ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2 ORDER BY "microposts"."created_at" DESC[0m  [["user_id", 1], ["status", 1]]
+  ↳ app/controllers/users_controller.rb:49:in `show'
+  [1m[36mCACHE Micropost Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2[0m  [["user_id", 1], ["status", 0]]
+  ↳ app/controllers/users_controller.rb:50:in `show'
+  [1m[36mMicropost Pluck (0.1ms)[0m  [1m[34mSELECT "microposts"."created_at" FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2 ORDER BY "microposts"."created_at" DESC[0m  [["user_id", 1], ["status", 1]]
+  ↳ app/controllers/users_controller.rb:64:in `show'
+👷👷👷👷👷@posted_dates: [17, 17, 17, 17, 17, 17]
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mMicropost Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "microposts" WHERE "microposts"."user_id" = $1 LIMIT $2[0m  [["user_id", 1], ["LIMIT", 1]]
+  ↳ app/views/users/show.html.erb:35
+  [1m[36mCACHE Micropost Load (0.0ms)[0m  [1m[34mSELECT "microposts".* FROM "microposts" WHERE "microposts"."user_id" = $1 AND "microposts"."status" = $2 ORDER BY "microposts"."created_at" DESC[0m  [["user_id", 1], ["status", 1]]
+  ↳ app/views/microposts/_micropost.html.erb:24
+  Rendered microposts/_micropost.html.erb (Duration: 35.3ms | Allocations: 4303)
+  Rendered users/show.html.erb within layouts/application (Duration: 40.5ms | Allocations: 6221)
+  Rendered layouts/_flash_message.html.erb (Duration: 0.0ms | Allocations: 23)
+  Rendered layout layouts/application.html.erb (Duration: 45.7ms | Allocations: 8511)
+Completed 200 OK in 70ms (Views: 47.4ms | ActiveRecord: 5.3ms | Allocations: 13283)
+
+
+Started GET "/test_user/zen" for 172.18.0.1 at 2025-02-17 10:10:09 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_new as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:74:in `zen_new'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/zen_new.html.erb within layouts/application
+  Rendered microposts/zen_new.html.erb within layouts/application (Duration: 9.5ms | Allocations: 1227)
+  Rendered layouts/_flash_message.html.erb (Duration: 1.1ms | Allocations: 232)
+  Rendered layout layouts/application.html.erb (Duration: 41.9ms | Allocations: 4175)
+Completed 200 OK in 64ms (Views: 47.5ms | ActiveRecord: 1.4ms | Allocations: 6218)
+
+
+Started GET "/test_user/zen" for 172.18.0.1 at 2025-02-17 10:10:26 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_new as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:74:in `zen_new'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/zen_new.html.erb within layouts/application
+  Rendered microposts/zen_new.html.erb within layouts/application (Duration: 8.7ms | Allocations: 1204)
+  Rendered layouts/_flash_message.html.erb (Duration: 1.8ms | Allocations: 232)
+  Rendered layout layouts/application.html.erb (Duration: 36.6ms | Allocations: 4171)
+Completed 200 OK in 66ms (Views: 40.2ms | ActiveRecord: 1.1ms | Allocations: 6199)
+
+
+Started GET "/test_user/zen" for 172.18.0.1 at 2025-02-17 10:11:15 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_new as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:74:in `zen_new'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/zen_new.html.erb within layouts/application
+  Rendered microposts/zen_new.html.erb within layouts/application (Duration: 8.3ms | Allocations: 1223)
+  Rendered layouts/_flash_message.html.erb (Duration: 0.9ms | Allocations: 232)
+  Rendered layout layouts/application.html.erb (Duration: 61.2ms | Allocations: 4162)
+Completed 200 OK in 89ms (Views: 65.4ms | ActiveRecord: 2.2ms | Allocations: 6212)
+
+
+Started GET "/test_user/camera" for 172.18.0.1 at 2025-02-17 10:11:23 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#camera as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:38:in `camera'
+  Rendering layout layouts/application.html.erb
+  Rendering users/camera.html.erb within layouts/application
+  Rendered shared/_micropost_form.html.erb (Duration: 3.0ms | Allocations: 1214)
+  Rendered users/camera.html.erb within layouts/application (Duration: 17.2ms | Allocations: 3412)
+  Rendered layouts/_flash_message.html.erb (Duration: 0.1ms | Allocations: 20)
+  Rendered layout layouts/application.html.erb (Duration: 22.6ms | Allocations: 5476)
+Completed 200 OK in 37ms (Views: 27.3ms | ActiveRecord: 1.7ms | Allocations: 6562)
+
+
+Started GET "/test_user/zen" for 172.18.0.1 at 2025-02-17 10:12:12 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_new as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:74:in `zen_new'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/zen_new.html.erb within layouts/application
+  Rendered microposts/zen_new.html.erb within layouts/application (Duration: 6.7ms | Allocations: 1792)
+  Rendered layout layouts/application.html.erb (Duration: 7.5ms | Allocations: 1880)
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 1.1ms | Allocations: 3886)
+
+
+  
+ActionView::Template::Error (undefined method `zen_new' for #<ActionView::Base:0x00000000019b68>):
+    27:                 focus:ring-gray-300 rounded-md disabled:opacity-50 disabled:cursor-not-allowed" 
+    28:           <%= 'disabled' if @user.name == 'test_user' %> >
+    29:     <!--<%= link_to "📸 手書きを読み取る", camera_path(@user), class: "submit-button text-dark text-decoration-none" %>-->
+    30:     <%= link_to "📸 手書きを読み取る", zen_new(@user), class: "submit-button text-dark text-decoration-none" %>
+    31:   </button>
+    32: <% end %>
+    33: 
+  
+app/views/microposts/zen_new.html.erb:30
+app/views/microposts/zen_new.html.erb:2
+Started GET "/" for 172.18.0.1 at 2025-02-17 10:13:11 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  Rendering home/index.html.erb
+  Rendered home/index.html.erb (Duration: 19.9ms | Allocations: 1867)
+Completed 200 OK in 45ms (Views: 22.5ms | ActiveRecord: 1.2ms | Allocations: 3651)
+
+
+Started POST "/guest_login" for 172.18.0.1 at 2025-02-17 10:13:12 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#guest as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:54:in `guest'
+Redirected to http://localhost:3001/test_user/zen
+Completed 302 Found in 11ms (ActiveRecord: 0.9ms | Allocations: 1357)
+
+
+Started GET "/test_user/zen" for 172.18.0.1 at 2025-02-17 10:13:12 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_new as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:74:in `zen_new'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/zen_new.html.erb within layouts/application
+  Rendered microposts/zen_new.html.erb within layouts/application (Duration: 4.8ms | Allocations: 1290)
+  Rendered layouts/_flash_message.html.erb (Duration: 0.6ms | Allocations: 235)
+  Rendered layout layouts/application.html.erb (Duration: 10.7ms | Allocations: 4232)
+Completed 200 OK in 19ms (Views: 13.0ms | ActiveRecord: 0.2ms | Allocations: 6081)
+
+
+Started GET "/test_user/zen" for 172.18.0.1 at 2025-02-17 10:13:16 +0000
+Cannot render console from 172.18.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MicropostsController#zen_new as HTML
+  Parameters: {"slug"=>"test_user"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/application_controller.rb:10:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."slug" = $1 LIMIT $2[0m  [["slug", "test_user"], ["LIMIT", 1]]
+  ↳ app/controllers/microposts_controller.rb:74:in `zen_new'
+  Rendering layout layouts/application.html.erb
+  Rendering microposts/zen_new.html.erb within layouts/application
+  Rendered microposts/zen_new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 840)
+  Rendered layouts/_flash_message.html.erb (Duration: 0.1ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 3043)
+Completed 200 OK in 20ms (Views: 10.8ms | ActiveRecord: 0.6ms | Allocations: 4526)
+
+

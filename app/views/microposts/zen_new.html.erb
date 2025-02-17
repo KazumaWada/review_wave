@@ -4,6 +4,10 @@
     ⚠️ べータ版: 最大1000文字までです。1枚の写真を入れると1000文字分を超過してしまいます。調節中です🙇‍♂️
    </p>
 
+   <p class="mt-3">
+   <%= f.label :guest_email, "送信先のメールアドレス:", class: "block text-sm font-medium text-gray-700" %>
+   <%= f.text_field :guest_email, class: "form-input mt-2 block w-80 border-2 border-blue-500" %>
+   </p>
 
     <!-- Quill editor container -->
     <div data-quill-target="editor" class="min-h-[500px] h-auto"></div>
@@ -11,40 +15,38 @@
     <!-- Hidden input to store Quill content -->
     <%= f.hidden_field :content, data: { quill_target: "input" } %>
     
-    <!--単語カード用-->
-    <%= render 'flash_card_input' %>
+  
     
 
     <!-- Actions -->
-    <div class="actions text-right mt-2">
-    <button
-    class="px-4 py-2 bg-gray-200 text-gray-500 border border-gray-300 
-           rounded-md cursor-not-allowed
-           disabled:hover:bg-gray-200 disabled:opacity-50"
-    disabled>
-    🤖AI
-  </button>
+  <div class="actions text-right mt-2">
 
   <% unless current_page?(camera_path) %>
-    <button class="hover:bg-yellow-500 px-4 py-2 bg-gray-100 border border-gray-300 text-gray-700 
-                 hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 
-                 focus:ring-gray-300 rounded-md <%= 'disable' if @user.name == 'test_user' %>"">
-      <%= link_to "📸 手書きを読み取る", camera_path(@user), class: "submit-button text-dark text-decoration-none" %>
-    </button>
-  <% end %>
+  <button class="hover:bg-yellow-500 px-4 py-2 bg-gray-100 border border-gray-300 text-gray-700 
+                hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 
+                focus:ring-gray-300 rounded-md disabled:opacity-50 disabled:cursor-not-allowed" 
+          <%= 'disabled' if @user.name == 'test_user' %> >
+    <!--<%= link_to "📸 手書きを読み取る", camera_path(@user), class: "submit-button text-dark text-decoration-none" %>-->
+    <%= link_to "📸 手書きを読み取る", zen_path(@user), class: "submit-button text-dark text-decoration-none" %>
+  </button>
+<% end %>
+
+
 
   <%= f.submit "📝 下書き保存",  
       id: "draft_submit_button", 
       name: "draft", 
+      disabled: true,
       class: "hover:bg-yellow-500 px-4 py-2 bg-gray-200 border border-gray-300 text-gray-800 
              hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 
-             focus:ring-gray-400 rounded-md" %>
+             focus:ring-gray-400 rounded-md disabled disabled:opacity-50 disabled:cursor-not-allowed" %>
 
   <%= f.submit "✅投稿", 
       id: "submit_button", 
+      disabled: true,
       class: "hover:bg-yellow-500 px-4 py-2 bg-gray-200 border border-gray-300 text-gray-800 
              hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 
-             focus:ring-gray-400 rounded-md" %>
+             focus:ring-gray-400 rounded-md disabled disabled:opacity-50 disabled:cursor-not-allowed" %>
     </div>
   <% end %>
 

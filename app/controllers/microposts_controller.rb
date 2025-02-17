@@ -93,7 +93,7 @@ class MicropostsController < ApplicationController
       end
 
       if @micropost.save && @micropost.status == "published"
-         MailgunService.send_simple_message(@user.name, @user.email, @micropost.content)
+         MailgunService.send_simple_message(@user.name, @micropost.content, @micropost.guest_email)
         flash[:success] = "nice. you did it!"
        
         #ファイルにも記録しておく。
@@ -165,7 +165,7 @@ class MicropostsController < ApplicationController
     private
 
     def micropost_params
-      params.require(:micropost).permit(:content)
+      params.require(:micropost).permit(:content, :guest_email)
       #{"authenticity_token"=>"[FILTERED]", "content"=>"hh", "commit"=>"Post", "slug"=>"a"}
     end
 

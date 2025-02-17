@@ -8,12 +8,13 @@ class MailgunService
     end
   
     #書き方はこっから->https://app.mailgun.com/mg/sending/eigopencil.com/settings?tab=setup)
-    def self.send_simple_message(user_name, user_email, content)#関数内が動的になったらselfを削除する。(https://scrapbox.io/kazdb/%E3%82%A4%E3%83%B3%E3%82%B9%E3%82%BF%E3%83%B3%E3%82%B9%E3%83%A1%E3%82%BD%E3%83%83%E3%83%89%E3%81%A8%E3%82%AF%E3%83%A9%E3%82%B9%E3%83%A1%E3%82%BD%E3%83%83%E3%83%89%E3%81%AE%E9%81%95%E3%81%84(self.~))
+    def self.send_simple_message(user_name, guest_email, content)#関数内が動的になったらselfを削除する。(https://scrapbox.io/kazdb/%E3%82%A4%E3%83%B3%E3%82%B9%E3%82%BF%E3%83%B3%E3%82%B9%E3%83%A1%E3%82%BD%E3%83%83%E3%83%89%E3%81%A8%E3%82%AF%E3%83%A9%E3%82%B9%E3%83%A1%E3%82%BD%E3%83%83%E3%83%89%E3%81%AE%E9%81%95%E3%81%84(self.~))
     RestClient.post(
       'https://api.mailgun.net/v3/eigopencil.com/messages',
       {
-      from: 'eigopencil.com <postmaster@eigopencil.com>',
-        to:  "#{user_name} <#{user_email}>",
+      from: 'review_wave <postmaster@eigopencil.com>',
+        #to:  "#{user_name} <#{guest_email}>",
+        to:  "#{user_name} <kazumawada.jp@gmail.com>",
         subject: "📚#{user_name}さん、今回の復習内容です！📚",
         text: "#{content}"
       },

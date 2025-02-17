@@ -65,7 +65,7 @@ class SessionsController < ApplicationController
     
     #session[:user_id] = user.id
     flash[:success] = "ようこそ🎉あなたはテストユーザーです"
-    redirect_to about_path
+    redirect_to zen_path(slug: "test_user")
   end
 
   def destroy
